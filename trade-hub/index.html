@@ -1,0 +1,1476 @@
+<!doctype html>
+<html lang="pt-BR" data-static data-base="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trade Hub — AgroMarket</title>
+  <meta name="description" content="Inteligência de mercado para o agro brasileiro sobre uma classificação própria de produtos — e uma rede onde exportadores e importadores se encontram.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css?v=2">
+</head>
+<body>
+<a class="sr-only" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="/" aria-label="AgroMarket — início">
+      <svg viewBox="0 0 76 18" aria-hidden="true"><path d="M3 17C10 5 24 1 38 1s28 4 35 16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+      <span class="logo-mark">agro<b>market</b></span>
+      <span class="logo-tag">O agro brasileiro <em>mais perto do mundo</em></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="main-nav" id="main-nav" aria-label="Principal">
+      <a href="/mercado/" >Inteligência de Mercado</a>
+      <a href="/trade-hub/" aria-current="page">Trade Hub</a>
+      <a href="/#camadas">Como funciona</a>
+      <a href="/#rede">A Rede</a>
+      <a href="#" data-open="contact">Contato</a>
+    </nav>
+    <div class="header-actions">
+      <span class="account-pill">Já tem uma conta? <a href="#" data-open="contact">Login</a></span>
+      <span class="lang" title="Idioma">PT</span>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<section class="catalog-hero hub-hero" style="--band-img: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Port_Santos.jpg/960px-Port_Santos.jpg')">
+  <div class="container">
+    <div class="eyebrow">Trade Hub</div>
+    <h1>Encontre com quem negociar</h1>
+    <p class="lead">Empresas resolvidas a partir de registros de embarque e ofertas de compra e venda abertas agora. Demonstrar interesse numa oferta vira sinal de demanda — e entra no ranking da página inicial.</p>
+  </div>
+</section>
+<div class="container">
+  <nav class="tabs" aria-label="Seções do Trade Hub">
+    <a href="/trade-hub/" aria-current="page">Ofertas ao vivo</a>
+    <a href="/trade-hub/empresas/" >Empresas</a>
+  </nav>
+  <form class="filter-bar" method="get" data-autosubmit>
+    <input type="hidden" name="aba" value="ofertas">
+    
+    <label class="field"><span>Lado</span><select name="lado">
+      <option value="">Compra e venda</option>
+      <option value="buy" >Compra</option>
+      <option value="sell" >Venda</option></select></label>
+    
+    <label class="field"><span>Produto</span><select name="produto">
+      <option value="">Todos os produtos</option>
+      <option value="abacate-hass" >Abacate Hass</option><option value="abacaxi-perola" >Abacaxi Pérola</option><option value="amendoa-de-cacau" >Amêndoa de Cacau</option><option value="acucar-refinado-icumsa-45" >Açúcar Refinado ICUMSA 45</option><option value="acucar-vhp" >Açúcar VHP</option><option value="cafe-arabica-verde" >Café Arábica Verde</option><option value="cafe-conilon-verde" >Café Conilon Verde</option><option value="cafe-torrado-em-graos" >Café Torrado em Grãos</option><option value="castanha-de-caju-w320" >Castanha de Caju W320</option><option value="castanha-do-brasil" >Castanha-do-Brasil</option><option value="chocolate-em-barra" >Chocolate em Barra</option><option value="file-de-tilapia-congelado" >Filé de Tilápia Congelado</option><option value="goiaba" >Goiaba</option><option value="leite-em-po-integral" >Leite em Pó Integral</option><option value="manga" >Manga</option><option value="mangostao" >Mangostão</option><option value="mel-organico" >Mel Orgânico</option><option value="mel-silvestre" >Mel Silvestre</option><option value="melao-amarelo" >Melão Amarelo</option><option value="milho-amarelo" >Milho Amarelo</option><option value="polpa-de-acai-congelada" >Polpa de Açaí Congelada</option><option value="soja-em-grao" >Soja em Grão</option><option value="suco-de-laranja-concentrado-fcoj" >Suco de Laranja Concentrado (FCOJ)</option><option value="oleo-de-soja-bruto" >Óleo de Soja Bruto</option></select></label>
+    <label class="field"><span>País</span><select name="pais">
+      <option value="">Todos os países</option>
+      <option value="DE" >🇩🇪 Alemanha</option><option value="AR" >🇦🇷 Argentina</option><option value="SA" >🇸🇦 Arábia Saudita</option><option value="BO" >🇧🇴 Bolívia</option><option value="BR" >🇧🇷 Brasil</option><option value="BE" >🇧🇪 Bélgica</option><option value="CA" >🇨🇦 Canadá</option><option value="CN" >🇨🇳 China</option><option value="CO" >🇨🇴 Colômbia</option><option value="KR" >🇰🇷 Coreia do Sul</option><option value="CR" >🇨🇷 Costa Rica</option><option value="CI" >🇨🇮 Costa do Marfim</option><option value="EG" >🇪🇬 Egito</option><option value="AE" >🇦🇪 Emirados Árabes</option><option value="ES" >🇪🇸 Espanha</option><option value="US" >🇺🇸 Estados Unidos</option><option value="ET" >🇪🇹 Etiópia</option><option value="FR" >🇫🇷 França</option><option value="GH" >🇬🇭 Gana</option><option value="IT" >🇮🇹 Itália</option><option value="JP" >🇯🇵 Japão</option><option value="MX" >🇲🇽 México</option><option value="NL" >🇳🇱 Países Baixos</option><option value="PE" >🇵🇪 Peru</option><option value="PT" >🇵🇹 Portugal</option><option value="GB" >🇬🇧 Reino Unido</option><option value="RU" >🇷🇺 Rússia</option><option value="TH" >🇹🇭 Tailândia</option><option value="VN" >🇻🇳 Vietnã</option><option value="IN" >🇮🇳 Índia</option></select></label>
+  </form>
+
+  
+    <p class="muted" data-count data-unit="ofertas abertas">69 ofertas abertas</p>
+    <div class="deal-list" style="padding-bottom:72px" data-items>
+      <article class="deal has-photo" data-item data-side="buy" data-product="cafe-torrado-em-graos" data-countries="AE AE">
+  <a class="deal-photo" href="/mercado/cafe-torrado-em-graos/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Roasted_Coffee_Beans_Texture.jpg/500px-Roasted_Coffee_Beans_Texture.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-11-06</span>
+  </div>
+  <h3><a href="/mercado/cafe-torrado-em-graos/">Café Torrado em Grãos</a></h3>
+  <div class="company">🇦🇪 <a href="/empresas/40/">Gulf Food Distribution LLC</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">50 t</dd>
+    <dt>Incoterm</dt><dd>CFR</dd>
+    <dt>Mercado</dt><dd>🇦🇪 Emirados Árabes</dd>
+  </dl>
+  <div class="deal-actions" data-deal="34">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="mangostao" data-countries="AE AE">
+  <a class="deal-photo" href="/mercado/mangostao/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Sweet_mangosteen.jpg/500px-Sweet_mangosteen.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-11-05</span>
+  </div>
+  <h3><a href="/mercado/mangostao/">Mangostão</a></h3>
+  <div class="company">🇦🇪 <a href="/empresas/40/">Gulf Food Distribution LLC</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">20 t</dd>
+    <dt>Incoterm</dt><dd>FCA</dd>
+    <dt>Mercado</dt><dd>🇦🇪 Emirados Árabes</dd>
+  </dl>
+  <div class="deal-actions" data-deal="45">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="cafe-arabica-verde" data-countries="US US">
+  <a class="deal-photo" href="/mercado/cafe-arabica-verde/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Green_Coffee_Beans_%284075921494%29.jpg/500px-Green_Coffee_Beans_%284075921494%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-11-04</span>
+  </div>
+  <h3><a href="/mercado/cafe-arabica-verde/">Café Arábica Verde</a></h3>
+  <div class="company">🇺🇸 <a href="/empresas/43/">Atlantic Specialty Coffee Inc</a>
+    </div>
+  <dl>
+    <dt>Volume</dt><dd class="num">200 t</dd>
+    <dt>Incoterm</dt><dd>FOB</dd>
+    <dt>Mercado</dt><dd>🇺🇸 Estados Unidos</dd>
+  </dl>
+  <div class="deal-actions" data-deal="60">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="acucar-refinado-icumsa-45" data-countries="SA SA">
+  <a class="deal-photo" href="/mercado/acucar-refinado-icumsa-45/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Granulated_White_Sugar_with_Large_Crystals%2C_Bright_Front_Light.jpg/500px-Granulated_White_Sugar_with_Large_Crystals%2C_Bright_Front_Light.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-11-03</span>
+  </div>
+  <h3><a href="/mercado/acucar-refinado-icumsa-45/">Açúcar Refinado ICUMSA 45</a></h3>
+  <div class="company">🇸🇦 <a href="/empresas/41/">Riyadh Agri Trading Co</a>
+    </div>
+  <dl>
+    <dt>Volume</dt><dd class="num">25 t</dd>
+    <dt>Incoterm</dt><dd>FCA</dd>
+    <dt>Mercado</dt><dd>🇸🇦 Arábia Saudita</dd>
+  </dl>
+  <div class="deal-actions" data-deal="61">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="cafe-torrado-em-graos" data-countries="SA SA">
+  <a class="deal-photo" href="/mercado/cafe-torrado-em-graos/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Roasted_Coffee_Beans_Texture.jpg/500px-Roasted_Coffee_Beans_Texture.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-11-03</span>
+  </div>
+  <h3><a href="/mercado/cafe-torrado-em-graos/">Café Torrado em Grãos</a></h3>
+  <div class="company">🇸🇦 <a href="/empresas/41/">Riyadh Agri Trading Co</a>
+    </div>
+  <dl>
+    <dt>Volume</dt><dd class="num">1.000 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Mercado</dt><dd>🇸🇦 Arábia Saudita</dd>
+  </dl>
+  <div class="deal-actions" data-deal="48">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="oleo-de-soja-bruto" data-countries="IN IN">
+  <a class="deal-photo" href="/mercado/oleo-de-soja-bruto/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Mike_Starkey_Soybean_Harvest_%2852490323277%29.jpg/500px-Mike_Starkey_Soybean_Harvest_%2852490323277%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-31</span>
+  </div>
+  <h3><a href="/mercado/oleo-de-soja-bruto/">Óleo de Soja Bruto</a></h3>
+  <div class="company">🇮🇳 <a href="/empresas/51/">Mumbai Agro Imports Pvt Ltd</a>
+    </div>
+  <dl>
+    <dt>Volume</dt><dd class="num">25 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Mercado</dt><dd>🇮🇳 Índia</dd>
+  </dl>
+  <div class="deal-actions" data-deal="53">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="cafe-conilon-verde" data-countries="US US">
+  <a class="deal-photo" href="/mercado/cafe-conilon-verde/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Coffee_Beans_%2821679786518%29.jpg/500px-Coffee_Beans_%2821679786518%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-31</span>
+  </div>
+  <h3><a href="/mercado/cafe-conilon-verde/">Café Conilon Verde</a></h3>
+  <div class="company">🇺🇸 <a href="/empresas/42/">Pacific Coast Foods Inc</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">50 t</dd>
+    <dt>Incoterm</dt><dd>FOB</dd>
+    <dt>Mercado</dt><dd>🇺🇸 Estados Unidos</dd>
+  </dl>
+  <div class="deal-actions" data-deal="28">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="manga" data-countries="GB GB">
+  <a class="deal-photo" href="/mercado/manga/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Mangos_-_single_and_halved.jpg/500px-Mangos_-_single_and_halved.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-31</span>
+  </div>
+  <h3><a href="/mercado/manga/">Manga</a></h3>
+  <div class="company">🇬🇧 <a href="/empresas/45/">London Fine Foods Ltd</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">25 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Mercado</dt><dd>🇬🇧 Reino Unido</dd>
+  </dl>
+  <div class="deal-actions" data-deal="17">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="amendoa-de-cacau" data-countries="DE DE">
+  <a class="deal-photo" href="/mercado/amendoa-de-cacau/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Fermented_cocoa_beans.png/500px-Fermented_cocoa_beans.png" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-29</span>
+  </div>
+  <h3><a href="/mercado/amendoa-de-cacau/">Amêndoa de Cacau</a></h3>
+  <div class="company">🇩🇪 <a href="/empresas/36/">Hamburg Kaffee Import GmbH</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">500 t</dd>
+    <dt>Incoterm</dt><dd>CFR</dd>
+    <dt>Mercado</dt><dd>🇩🇪 Alemanha</dd>
+  </dl>
+  <div class="deal-actions" data-deal="50">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="abacate-hass" data-countries="GB GB">
+  <a class="deal-photo" href="/mercado/abacate-hass/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Avocado_Hass_-_single_and_halved.jpg/500px-Avocado_Hass_-_single_and_halved.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-28</span>
+  </div>
+  <h3><a href="/mercado/abacate-hass/">Abacate Hass</a></h3>
+  <div class="company">🇬🇧 <a href="/empresas/45/">London Fine Foods Ltd</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">25 t</dd>
+    <dt>Incoterm</dt><dd>FOB</dd>
+    <dt>Mercado</dt><dd>🇬🇧 Reino Unido</dd>
+  </dl>
+  <div class="deal-actions" data-deal="22">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="cafe-torrado-em-graos" data-countries="IT PT">
+  <a class="deal-photo" href="/mercado/cafe-torrado-em-graos/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Roasted_Coffee_Beans_Texture.jpg/500px-Roasted_Coffee_Beans_Texture.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-27</span>
+  </div>
+  <h3><a href="/mercado/cafe-torrado-em-graos/">Café Torrado em Grãos</a></h3>
+  <div class="company">🇮🇹 <a href="/empresas/34/">Trieste Torrefazione S.p.A.</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">25 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Destino</dt><dd>🇵🇹 Portugal</dd>
+  </dl>
+  <div class="deal-actions" data-deal="66">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="leite-em-po-integral" data-countries="BR SA">
+  <a class="deal-photo" href="/mercado/leite-em-po-integral/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Dairy_cows_grazing_with_visible_graze_line.jpg/500px-Dairy_cows_grazing_with_visible_graze_line.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-26</span>
+  </div>
+  <h3><a href="/mercado/leite-em-po-integral/">Leite em Pó Integral</a></h3>
+  <div class="company">🇧🇷 <a href="/empresas/17/">Laticínios Serra Verde Ltda</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">1.000 t</dd>
+    <dt>Incoterm</dt><dd>CFR</dd>
+    <dt>Destino</dt><dd>🇸🇦 Arábia Saudita</dd>
+  </dl>
+  <div class="deal-actions" data-deal="18">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="mangostao" data-countries="CN CN">
+  <a class="deal-photo" href="/mercado/mangostao/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Sweet_mangosteen.jpg/500px-Sweet_mangosteen.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-25</span>
+  </div>
+  <h3><a href="/mercado/mangostao/">Mangostão</a></h3>
+  <div class="company">🇨🇳 <a href="/empresas/38/">Shanghai Golden Harvest Trading Co</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">200 t</dd>
+    <dt>Incoterm</dt><dd>CFR</dd>
+    <dt>Mercado</dt><dd>🇨🇳 China</dd>
+  </dl>
+  <div class="deal-actions" data-deal="67">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="abacate-hass" data-countries="SA SA">
+  <a class="deal-photo" href="/mercado/abacate-hass/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Avocado_Hass_-_single_and_halved.jpg/500px-Avocado_Hass_-_single_and_halved.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-25</span>
+  </div>
+  <h3><a href="/mercado/abacate-hass/">Abacate Hass</a></h3>
+  <div class="company">🇸🇦 <a href="/empresas/41/">Riyadh Agri Trading Co</a>
+    </div>
+  <dl>
+    <dt>Volume</dt><dd class="num">200 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Mercado</dt><dd>🇸🇦 Arábia Saudita</dd>
+  </dl>
+  <div class="deal-actions" data-deal="65">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="milho-amarelo" data-countries="AR KR">
+  <a class="deal-photo" href="/mercado/milho-amarelo/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Corn_on_the_cob_%28sweet_corn%29.jpg/500px-Corn_on_the_cob_%28sweet_corn%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-25</span>
+  </div>
+  <h3><a href="/mercado/milho-amarelo/">Milho Amarelo</a></h3>
+  <div class="company">🇦🇷 <a href="/empresas/25/">Pampa Agro S.A.</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">25 t</dd>
+    <dt>Incoterm</dt><dd>CFR</dd>
+    <dt>Destino</dt><dd>🇰🇷 Coreia do Sul</dd>
+  </dl>
+  <div class="deal-actions" data-deal="44">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="leite-em-po-integral" data-countries="CN CN">
+  <a class="deal-photo" href="/mercado/leite-em-po-integral/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Dairy_cows_grazing_with_visible_graze_line.jpg/500px-Dairy_cows_grazing_with_visible_graze_line.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-25</span>
+  </div>
+  <h3><a href="/mercado/leite-em-po-integral/">Leite em Pó Integral</a></h3>
+  <div class="company">🇨🇳 <a href="/empresas/38/">Shanghai Golden Harvest Trading Co</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">500 t</dd>
+    <dt>Incoterm</dt><dd>FOB</dd>
+    <dt>Mercado</dt><dd>🇨🇳 China</dd>
+  </dl>
+  <div class="deal-actions" data-deal="12">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="soja-em-grao" data-countries="BR ES">
+  <a class="deal-photo" href="/mercado/soja-em-grao/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Mike_Starkey_Soybean_Harvest_%2852490323652%29.jpg/500px-Mike_Starkey_Soybean_Harvest_%2852490323652%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-24</span>
+  </div>
+  <h3><a href="/mercado/soja-em-grao/">Soja em Grão</a></h3>
+  <div class="company">🇧🇷 <a href="/empresas/14/">Grãos do Centro-Oeste Comércio Ltda</a>
+    </div>
+  <dl>
+    <dt>Volume</dt><dd class="num">25 t</dd>
+    <dt>Incoterm</dt><dd>EXW</dd>
+    <dt>Destino</dt><dd>🇪🇸 Espanha</dd>
+  </dl>
+  <div class="deal-actions" data-deal="49">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="milho-amarelo" data-countries="US VN">
+  <a class="deal-photo" href="/mercado/milho-amarelo/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Corn_on_the_cob_%28sweet_corn%29.jpg/500px-Corn_on_the_cob_%28sweet_corn%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-24</span>
+  </div>
+  <h3><a href="/mercado/milho-amarelo/">Milho Amarelo</a></h3>
+  <div class="company">🇺🇸 <a href="/empresas/26/">Midwest Grain Partners Inc</a>
+    </div>
+  <dl>
+    <dt>Volume</dt><dd class="num">500 t</dd>
+    <dt>Incoterm</dt><dd>CFR</dd>
+    <dt>Destino</dt><dd>🇻🇳 Vietnã</dd>
+  </dl>
+  <div class="deal-actions" data-deal="7">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="suco-de-laranja-concentrado-fcoj" data-countries="BE BE">
+  <a class="deal-photo" href="/mercado/suco-de-laranja-concentrado-fcoj/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Local_Orange_Variety_of_Kozan_-_Kozan_Yerli_Portakal_04.jpg/500px-Local_Orange_Variety_of_Kozan_-_Kozan_Yerli_Portakal_04.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-23</span>
+  </div>
+  <h3><a href="/mercado/suco-de-laranja-concentrado-fcoj/">Suco de Laranja Concentrado (FCOJ)</a></h3>
+  <div class="company">🇧🇪 <a href="/empresas/32/">Brussels Chocolatiers N.V.</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">500 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Mercado</dt><dd>🇧🇪 Bélgica</dd>
+  </dl>
+  <div class="deal-actions" data-deal="52">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="castanha-do-brasil" data-countries="GB GB">
+  <a class="deal-photo" href="/mercado/castanha-do-brasil/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Bertholletia_excelsa_seeds_closeup.jpg/500px-Bertholletia_excelsa_seeds_closeup.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-22</span>
+  </div>
+  <h3><a href="/mercado/castanha-do-brasil/">Castanha-do-Brasil</a></h3>
+  <div class="company">🇬🇧 <a href="/empresas/45/">London Fine Foods Ltd</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">50 t</dd>
+    <dt>Incoterm</dt><dd>EXW</dd>
+    <dt>Mercado</dt><dd>🇬🇧 Reino Unido</dd>
+  </dl>
+  <div class="deal-actions" data-deal="47">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="melao-amarelo" data-countries="ES ES">
+  <a class="deal-photo" href="/mercado/melao-amarelo/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Gaia_Melon_%281016454281%29.jpg/500px-Gaia_Melon_%281016454281%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-22</span>
+  </div>
+  <h3><a href="/mercado/melao-amarelo/">Melão Amarelo</a></h3>
+  <div class="company">🇪🇸 <a href="/empresas/46/">Madrid Frutas S.L.</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">20 t</dd>
+    <dt>Incoterm</dt><dd>FCA</dd>
+    <dt>Mercado</dt><dd>🇪🇸 Espanha</dd>
+  </dl>
+  <div class="deal-actions" data-deal="33">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="mangostao" data-countries="US US">
+  <a class="deal-photo" href="/mercado/mangostao/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Sweet_mangosteen.jpg/500px-Sweet_mangosteen.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-22</span>
+  </div>
+  <h3><a href="/mercado/mangostao/">Mangostão</a></h3>
+  <div class="company">🇺🇸 <a href="/empresas/42/">Pacific Coast Foods Inc</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">500 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Mercado</dt><dd>🇺🇸 Estados Unidos</dd>
+  </dl>
+  <div class="deal-actions" data-deal="2">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="chocolate-em-barra" data-countries="JP JP">
+  <a class="deal-photo" href="/mercado/chocolate-em-barra/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/2020-02-23_02_26_30_A_Ghirardelli_Milk_Chocolate_Caramel_Square_broken_into_two_pieces_in_the_Parkway_Village_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg/500px-thumbnail.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-21</span>
+  </div>
+  <h3><a href="/mercado/chocolate-em-barra/">Chocolate em Barra</a></h3>
+  <div class="company">🇯🇵 <a href="/empresas/39/">Tokyo Shokuhin Trading Co</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">500 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Mercado</dt><dd>🇯🇵 Japão</dd>
+  </dl>
+  <div class="deal-actions" data-deal="54">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="file-de-tilapia-congelado" data-countries="VN US">
+  <a class="deal-photo" href="/mercado/file-de-tilapia-congelado/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Tilapia_food_dish.jpg/500px-Tilapia_food_dish.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-21</span>
+  </div>
+  <h3><a href="/mercado/file-de-tilapia-congelado/">Filé de Tilápia Congelado</a></h3>
+  <div class="company">🇻🇳 <a href="/empresas/19/">Mekong Agro Export Co</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">500 t</dd>
+    <dt>Incoterm</dt><dd>CFR</dd>
+    <dt>Destino</dt><dd>🇺🇸 Estados Unidos</dd>
+  </dl>
+  <div class="deal-actions" data-deal="30">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="cafe-arabica-verde" data-countries="CO US">
+  <a class="deal-photo" href="/mercado/cafe-arabica-verde/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Green_Coffee_Beans_%284075921494%29.jpg/500px-Green_Coffee_Beans_%284075921494%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-21</span>
+  </div>
+  <h3><a href="/mercado/cafe-arabica-verde/">Café Arábica Verde</a></h3>
+  <div class="company">🇨🇴 <a href="/empresas/18/">Cafetal Andino S.A.S.</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">25 t</dd>
+    <dt>Incoterm</dt><dd>FCA</dd>
+    <dt>Destino</dt><dd>🇺🇸 Estados Unidos</dd>
+  </dl>
+  <div class="deal-actions" data-deal="6">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="suco-de-laranja-concentrado-fcoj" data-countries="JP JP">
+  <a class="deal-photo" href="/mercado/suco-de-laranja-concentrado-fcoj/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Local_Orange_Variety_of_Kozan_-_Kozan_Yerli_Portakal_04.jpg/500px-Local_Orange_Variety_of_Kozan_-_Kozan_Yerli_Portakal_04.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-21</span>
+  </div>
+  <h3><a href="/mercado/suco-de-laranja-concentrado-fcoj/">Suco de Laranja Concentrado (FCOJ)</a></h3>
+  <div class="company">🇯🇵 <a href="/empresas/39/">Tokyo Shokuhin Trading Co</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">200 t</dd>
+    <dt>Incoterm</dt><dd>EXW</dd>
+    <dt>Mercado</dt><dd>🇯🇵 Japão</dd>
+  </dl>
+  <div class="deal-actions" data-deal="5">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="goiaba" data-countries="BR CA">
+  <a class="deal-photo" href="/mercado/goiaba/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/DFC_3945_A_pile_of_glossy_green_guavas_with_one_sliced_open_to_reveal_its_bright_pink_seed-speckled_interior.jpg/500px-DFC_3945_A_pile_of_glossy_green_guavas_with_one_sliced_open_to_reveal_its_bright_pink_seed-speckled_interior.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-19</span>
+  </div>
+  <h3><a href="/mercado/goiaba/">Goiaba</a></h3>
+  <div class="company">🇧🇷 <a href="/empresas/5/">Citrus Paulista Indústria S.A.</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">1.000 t</dd>
+    <dt>Incoterm</dt><dd>FOB</dd>
+    <dt>Destino</dt><dd>🇨🇦 Canadá</dd>
+  </dl>
+  <div class="deal-actions" data-deal="69">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="leite-em-po-integral" data-countries="NL MX">
+  <a class="deal-photo" href="/mercado/leite-em-po-integral/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Dairy_cows_grazing_with_visible_graze_line.jpg/500px-Dairy_cows_grazing_with_visible_graze_line.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-19</span>
+  </div>
+  <h3><a href="/mercado/leite-em-po-integral/">Leite em Pó Integral</a></h3>
+  <div class="company">🇳🇱 <a href="/empresas/35/">Friesland Dairy Export B.V.</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">25 t</dd>
+    <dt>Incoterm</dt><dd>FOB</dd>
+    <dt>Destino</dt><dd>🇲🇽 México</dd>
+  </dl>
+  <div class="deal-actions" data-deal="10">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="acucar-vhp" data-countries="IN SA">
+  <a class="deal-photo" href="/mercado/acucar-vhp/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Harvestor_cutting_sugarcane.jpg/500px-Harvestor_cutting_sugarcane.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-17</span>
+  </div>
+  <h3><a href="/mercado/acucar-vhp/">Açúcar VHP</a></h3>
+  <div class="company">🇮🇳 <a href="/empresas/30/">Gujarat Agro Exports Pvt Ltd</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">200 t</dd>
+    <dt>Incoterm</dt><dd>FCA</dd>
+    <dt>Destino</dt><dd>🇸🇦 Arábia Saudita</dd>
+  </dl>
+  <div class="deal-actions" data-deal="43">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="cafe-conilon-verde" data-countries="VN IT">
+  <a class="deal-photo" href="/mercado/cafe-conilon-verde/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Coffee_Beans_%2821679786518%29.jpg/500px-Coffee_Beans_%2821679786518%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-16</span>
+  </div>
+  <h3><a href="/mercado/cafe-conilon-verde/">Café Conilon Verde</a></h3>
+  <div class="company">🇻🇳 <a href="/empresas/19/">Mekong Agro Export Co</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">50 t</dd>
+    <dt>Incoterm</dt><dd>CFR</dd>
+    <dt>Destino</dt><dd>🇮🇹 Itália</dd>
+  </dl>
+  <div class="deal-actions" data-deal="36">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="oleo-de-soja-bruto" data-countries="CN CN">
+  <a class="deal-photo" href="/mercado/oleo-de-soja-bruto/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Mike_Starkey_Soybean_Harvest_%2852490323277%29.jpg/500px-Mike_Starkey_Soybean_Harvest_%2852490323277%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-15</span>
+  </div>
+  <h3><a href="/mercado/oleo-de-soja-bruto/">Óleo de Soja Bruto</a></h3>
+  <div class="company">🇨🇳 <a href="/empresas/38/">Shanghai Golden Harvest Trading Co</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">50 t</dd>
+    <dt>Incoterm</dt><dd>FCA</dd>
+    <dt>Mercado</dt><dd>🇨🇳 China</dd>
+  </dl>
+  <div class="deal-actions" data-deal="19">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="milho-amarelo" data-countries="JP JP">
+  <a class="deal-photo" href="/mercado/milho-amarelo/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Corn_on_the_cob_%28sweet_corn%29.jpg/500px-Corn_on_the_cob_%28sweet_corn%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-14</span>
+  </div>
+  <h3><a href="/mercado/milho-amarelo/">Milho Amarelo</a></h3>
+  <div class="company">🇯🇵 <a href="/empresas/39/">Tokyo Shokuhin Trading Co</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">100 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Mercado</dt><dd>🇯🇵 Japão</dd>
+  </dl>
+  <div class="deal-actions" data-deal="39">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="mel-organico" data-countries="BR CA">
+  <a class="deal-photo" href="/mercado/mel-organico/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Western_honey_bee_on_a_honeycomb.jpg/500px-Western_honey_bee_on_a_honeycomb.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-14</span>
+  </div>
+  <h3><a href="/mercado/mel-organico/">Mel Orgânico</a></h3>
+  <div class="company">🇧🇷 <a href="/empresas/15/">Mel do Sertão Apicultura Ltda</a>
+    </div>
+  <dl>
+    <dt>Volume</dt><dd class="num">100 t</dd>
+    <dt>Incoterm</dt><dd>CFR</dd>
+    <dt>Destino</dt><dd>🇨🇦 Canadá</dd>
+  </dl>
+  <div class="deal-actions" data-deal="26">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="chocolate-em-barra" data-countries="BR GB">
+  <a class="deal-photo" href="/mercado/chocolate-em-barra/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/2020-02-23_02_26_30_A_Ghirardelli_Milk_Chocolate_Caramel_Square_broken_into_two_pieces_in_the_Parkway_Village_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg/500px-thumbnail.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-13</span>
+  </div>
+  <h3><a href="/mercado/chocolate-em-barra/">Chocolate em Barra</a></h3>
+  <div class="company">🇧🇷 <a href="/empresas/11/">Cacau Sul da Bahia Indústria e Comércio Ltda</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">20 t</dd>
+    <dt>Incoterm</dt><dd>CFR</dd>
+    <dt>Destino</dt><dd>🇬🇧 Reino Unido</dd>
+  </dl>
+  <div class="deal-actions" data-deal="59">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="polpa-de-acai-congelada" data-countries="JP JP">
+  <a class="deal-photo" href="/mercado/polpa-de-acai-congelada/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Acai_Berry_Bowl_%2834046937903%29.jpg/500px-Acai_Berry_Bowl_%2834046937903%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-13</span>
+  </div>
+  <h3><a href="/mercado/polpa-de-acai-congelada/">Polpa de Açaí Congelada</a></h3>
+  <div class="company">🇯🇵 <a href="/empresas/39/">Tokyo Shokuhin Trading Co</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">20 t</dd>
+    <dt>Incoterm</dt><dd>FCA</dd>
+    <dt>Mercado</dt><dd>🇯🇵 Japão</dd>
+  </dl>
+  <div class="deal-actions" data-deal="56">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="cafe-conilon-verde" data-countries="BR IN">
+  <a class="deal-photo" href="/mercado/cafe-conilon-verde/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Coffee_Beans_%2821679786518%29.jpg/500px-Coffee_Beans_%2821679786518%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-13</span>
+  </div>
+  <h3><a href="/mercado/cafe-conilon-verde/">Café Conilon Verde</a></h3>
+  <div class="company">🇧🇷 <a href="/empresas/9/">Conilon Capixaba Comércio Ltda</a>
+    </div>
+  <dl>
+    <dt>Volume</dt><dd class="num">25 t</dd>
+    <dt>Incoterm</dt><dd>CFR</dd>
+    <dt>Destino</dt><dd>🇮🇳 Índia</dd>
+  </dl>
+  <div class="deal-actions" data-deal="24">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="abacate-hass" data-countries="GB GB">
+  <a class="deal-photo" href="/mercado/abacate-hass/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Avocado_Hass_-_single_and_halved.jpg/500px-Avocado_Hass_-_single_and_halved.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-12</span>
+  </div>
+  <h3><a href="/mercado/abacate-hass/">Abacate Hass</a></h3>
+  <div class="company">🇬🇧 <a href="/empresas/45/">London Fine Foods Ltd</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">500 t</dd>
+    <dt>Incoterm</dt><dd>FCA</dd>
+    <dt>Mercado</dt><dd>🇬🇧 Reino Unido</dd>
+  </dl>
+  <div class="deal-actions" data-deal="40">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="manga" data-countries="PE GB">
+  <a class="deal-photo" href="/mercado/manga/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Mangos_-_single_and_halved.jpg/500px-Mangos_-_single_and_halved.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-11</span>
+  </div>
+  <h3><a href="/mercado/manga/">Manga</a></h3>
+  <div class="company">🇵🇪 <a href="/empresas/20/">Lima Fruits S.A.C.</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">500 t</dd>
+    <dt>Incoterm</dt><dd>FCA</dd>
+    <dt>Destino</dt><dd>🇬🇧 Reino Unido</dd>
+  </dl>
+  <div class="deal-actions" data-deal="42">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="melao-amarelo" data-countries="GB GB">
+  <a class="deal-photo" href="/mercado/melao-amarelo/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Gaia_Melon_%281016454281%29.jpg/500px-Gaia_Melon_%281016454281%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-11</span>
+  </div>
+  <h3><a href="/mercado/melao-amarelo/">Melão Amarelo</a></h3>
+  <div class="company">🇬🇧 <a href="/empresas/45/">London Fine Foods Ltd</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">20 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Mercado</dt><dd>🇬🇧 Reino Unido</dd>
+  </dl>
+  <div class="deal-actions" data-deal="25">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="polpa-de-acai-congelada" data-countries="BR JP">
+  <a class="deal-photo" href="/mercado/polpa-de-acai-congelada/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Acai_Berry_Bowl_%2834046937903%29.jpg/500px-Acai_Berry_Bowl_%2834046937903%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-11</span>
+  </div>
+  <h3><a href="/mercado/polpa-de-acai-congelada/">Polpa de Açaí Congelada</a></h3>
+  <div class="company">🇧🇷 <a href="/empresas/6/">Abacates Minas Gerais Agrícola Ltda</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">200 t</dd>
+    <dt>Incoterm</dt><dd>FOB</dd>
+    <dt>Destino</dt><dd>🇯🇵 Japão</dd>
+  </dl>
+  <div class="deal-actions" data-deal="15">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="castanha-do-brasil" data-countries="PE KR">
+  <a class="deal-photo" href="/mercado/castanha-do-brasil/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Bertholletia_excelsa_seeds_closeup.jpg/500px-Bertholletia_excelsa_seeds_closeup.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-11</span>
+  </div>
+  <h3><a href="/mercado/castanha-do-brasil/">Castanha-do-Brasil</a></h3>
+  <div class="company">🇵🇪 <a href="/empresas/20/">Lima Fruits S.A.C.</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">20 t</dd>
+    <dt>Incoterm</dt><dd>FCA</dd>
+    <dt>Destino</dt><dd>🇰🇷 Coreia do Sul</dd>
+  </dl>
+  <div class="deal-actions" data-deal="8">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="amendoa-de-cacau" data-countries="US US">
+  <a class="deal-photo" href="/mercado/amendoa-de-cacau/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Fermented_cocoa_beans.png/500px-Fermented_cocoa_beans.png" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-10</span>
+  </div>
+  <h3><a href="/mercado/amendoa-de-cacau/">Amêndoa de Cacau</a></h3>
+  <div class="company">🇺🇸 <a href="/empresas/42/">Pacific Coast Foods Inc</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">25 t</dd>
+    <dt>Incoterm</dt><dd>EXW</dd>
+    <dt>Mercado</dt><dd>🇺🇸 Estados Unidos</dd>
+  </dl>
+  <div class="deal-actions" data-deal="63">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="abacate-hass" data-countries="SA SA">
+  <a class="deal-photo" href="/mercado/abacate-hass/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Avocado_Hass_-_single_and_halved.jpg/500px-Avocado_Hass_-_single_and_halved.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-10</span>
+  </div>
+  <h3><a href="/mercado/abacate-hass/">Abacate Hass</a></h3>
+  <div class="company">🇸🇦 <a href="/empresas/41/">Riyadh Agri Trading Co</a>
+    </div>
+  <dl>
+    <dt>Volume</dt><dd class="num">100 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Mercado</dt><dd>🇸🇦 Arábia Saudita</dd>
+  </dl>
+  <div class="deal-actions" data-deal="62">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="abacaxi-perola" data-countries="AR AR">
+  <a class="deal-photo" href="/mercado/abacaxi-perola/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/%E0%B4%95%E0%B5%88%E0%B4%A4%E0%B4%9A%E0%B5%8D%E0%B4%9A%E0%B4%95%E0%B5%8D%E0%B4%95.jpg/500px-%E0%B4%95%E0%B5%88%E0%B4%A4%E0%B4%9A%E0%B5%8D%E0%B4%9A%E0%B4%95%E0%B5%8D%E0%B4%95.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-10</span>
+  </div>
+  <h3><a href="/mercado/abacaxi-perola/">Abacaxi Pérola</a></h3>
+  <div class="company">🇦🇷 <a href="/empresas/55/">Buenos Aires Frutas S.A.</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">1.000 t</dd>
+    <dt>Incoterm</dt><dd>EXW</dd>
+    <dt>Mercado</dt><dd>🇦🇷 Argentina</dd>
+  </dl>
+  <div class="deal-actions" data-deal="46">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="goiaba" data-countries="MX CA">
+  <a class="deal-photo" href="/mercado/goiaba/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/DFC_3945_A_pile_of_glossy_green_guavas_with_one_sliced_open_to_reveal_its_bright_pink_seed-speckled_interior.jpg/500px-DFC_3945_A_pile_of_glossy_green_guavas_with_one_sliced_open_to_reveal_its_bright_pink_seed-speckled_interior.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-09</span>
+  </div>
+  <h3><a href="/mercado/goiaba/">Goiaba</a></h3>
+  <div class="company">🇲🇽 <a href="/empresas/21/">Michoacán Frutas Exportadora S.A. de C.V.</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">1.000 t</dd>
+    <dt>Incoterm</dt><dd>FCA</dd>
+    <dt>Destino</dt><dd>🇨🇦 Canadá</dd>
+  </dl>
+  <div class="deal-actions" data-deal="64">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="abacaxi-perola" data-countries="NL NL">
+  <a class="deal-photo" href="/mercado/abacaxi-perola/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/%E0%B4%95%E0%B5%88%E0%B4%A4%E0%B4%9A%E0%B5%8D%E0%B4%9A%E0%B4%95%E0%B5%8D%E0%B4%95.jpg/500px-%E0%B4%95%E0%B5%88%E0%B4%A4%E0%B4%9A%E0%B5%8D%E0%B4%9A%E0%B4%95%E0%B5%8D%E0%B4%95.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-09</span>
+  </div>
+  <h3><a href="/mercado/abacaxi-perola/">Abacaxi Pérola</a></h3>
+  <div class="company">🇳🇱 <a href="/empresas/37/">Rotterdam Fresh Produce B.V.</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">1.000 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Mercado</dt><dd>🇳🇱 Países Baixos</dd>
+  </dl>
+  <div class="deal-actions" data-deal="16">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="goiaba" data-countries="MX CA">
+  <a class="deal-photo" href="/mercado/goiaba/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/DFC_3945_A_pile_of_glossy_green_guavas_with_one_sliced_open_to_reveal_its_bright_pink_seed-speckled_interior.jpg/500px-DFC_3945_A_pile_of_glossy_green_guavas_with_one_sliced_open_to_reveal_its_bright_pink_seed-speckled_interior.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-09</span>
+  </div>
+  <h3><a href="/mercado/goiaba/">Goiaba</a></h3>
+  <div class="company">🇲🇽 <a href="/empresas/21/">Michoacán Frutas Exportadora S.A. de C.V.</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">100 t</dd>
+    <dt>Incoterm</dt><dd>EXW</dd>
+    <dt>Destino</dt><dd>🇨🇦 Canadá</dd>
+  </dl>
+  <div class="deal-actions" data-deal="14">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="mel-silvestre" data-countries="IN US">
+  <a class="deal-photo" href="/mercado/mel-silvestre/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Antiguan_honey_products_at_an_exhibition_in_Saint_Lucia.jpg/500px-Antiguan_honey_products_at_an_exhibition_in_Saint_Lucia.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-09</span>
+  </div>
+  <h3><a href="/mercado/mel-silvestre/">Mel Silvestre</a></h3>
+  <div class="company">🇮🇳 <a href="/empresas/30/">Gujarat Agro Exports Pvt Ltd</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">1.000 t</dd>
+    <dt>Incoterm</dt><dd>EXW</dd>
+    <dt>Destino</dt><dd>🇺🇸 Estados Unidos</dd>
+  </dl>
+  <div class="deal-actions" data-deal="11">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="cafe-torrado-em-graos" data-countries="US US">
+  <a class="deal-photo" href="/mercado/cafe-torrado-em-graos/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Roasted_Coffee_Beans_Texture.jpg/500px-Roasted_Coffee_Beans_Texture.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-09</span>
+  </div>
+  <h3><a href="/mercado/cafe-torrado-em-graos/">Café Torrado em Grãos</a></h3>
+  <div class="company">🇺🇸 <a href="/empresas/43/">Atlantic Specialty Coffee Inc</a>
+    </div>
+  <dl>
+    <dt>Volume</dt><dd class="num">500 t</dd>
+    <dt>Incoterm</dt><dd>FCA</dd>
+    <dt>Mercado</dt><dd>🇺🇸 Estados Unidos</dd>
+  </dl>
+  <div class="deal-actions" data-deal="4">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="cafe-arabica-verde" data-countries="BR IT">
+  <a class="deal-photo" href="/mercado/cafe-arabica-verde/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Green_Coffee_Beans_%284075921494%29.jpg/500px-Green_Coffee_Beans_%284075921494%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-08</span>
+  </div>
+  <h3><a href="/mercado/cafe-arabica-verde/">Café Arábica Verde</a></h3>
+  <div class="company">🇧🇷 <a href="/empresas/8/">Café Mantiqueira Exportadora Ltda</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">50 t</dd>
+    <dt>Incoterm</dt><dd>FOB</dd>
+    <dt>Destino</dt><dd>🇮🇹 Itália</dd>
+  </dl>
+  <div class="deal-actions" data-deal="41">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="cafe-torrado-em-graos" data-countries="CN CN">
+  <a class="deal-photo" href="/mercado/cafe-torrado-em-graos/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Roasted_Coffee_Beans_Texture.jpg/500px-Roasted_Coffee_Beans_Texture.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-08</span>
+  </div>
+  <h3><a href="/mercado/cafe-torrado-em-graos/">Café Torrado em Grãos</a></h3>
+  <div class="company">🇨🇳 <a href="/empresas/38/">Shanghai Golden Harvest Trading Co</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">50 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Mercado</dt><dd>🇨🇳 China</dd>
+  </dl>
+  <div class="deal-actions" data-deal="20">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="mel-organico" data-countries="CA CA">
+  <a class="deal-photo" href="/mercado/mel-organico/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Western_honey_bee_on_a_honeycomb.jpg/500px-Western_honey_bee_on_a_honeycomb.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-08</span>
+  </div>
+  <h3><a href="/mercado/mel-organico/">Mel Orgânico</a></h3>
+  <div class="company">🇨🇦 <a href="/empresas/48/">Toronto Natural Foods Inc</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">100 t</dd>
+    <dt>Incoterm</dt><dd>CFR</dd>
+    <dt>Mercado</dt><dd>🇨🇦 Canadá</dd>
+  </dl>
+  <div class="deal-actions" data-deal="9">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="suco-de-laranja-concentrado-fcoj" data-countries="CN CN">
+  <a class="deal-photo" href="/mercado/suco-de-laranja-concentrado-fcoj/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Local_Orange_Variety_of_Kozan_-_Kozan_Yerli_Portakal_04.jpg/500px-Local_Orange_Variety_of_Kozan_-_Kozan_Yerli_Portakal_04.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-08</span>
+  </div>
+  <h3><a href="/mercado/suco-de-laranja-concentrado-fcoj/">Suco de Laranja Concentrado (FCOJ)</a></h3>
+  <div class="company">🇨🇳 <a href="/empresas/38/">Shanghai Golden Harvest Trading Co</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">500 t</dd>
+    <dt>Incoterm</dt><dd>FOB</dd>
+    <dt>Mercado</dt><dd>🇨🇳 China</dd>
+  </dl>
+  <div class="deal-actions" data-deal="3">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="leite-em-po-integral" data-countries="AE AE">
+  <a class="deal-photo" href="/mercado/leite-em-po-integral/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Dairy_cows_grazing_with_visible_graze_line.jpg/500px-Dairy_cows_grazing_with_visible_graze_line.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-07</span>
+  </div>
+  <h3><a href="/mercado/leite-em-po-integral/">Leite em Pó Integral</a></h3>
+  <div class="company">🇦🇪 <a href="/empresas/40/">Gulf Food Distribution LLC</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">25 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Mercado</dt><dd>🇦🇪 Emirados Árabes</dd>
+  </dl>
+  <div class="deal-actions" data-deal="32">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="melao-amarelo" data-countries="ES ES">
+  <a class="deal-photo" href="/mercado/melao-amarelo/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Gaia_Melon_%281016454281%29.jpg/500px-Gaia_Melon_%281016454281%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-07</span>
+  </div>
+  <h3><a href="/mercado/melao-amarelo/">Melão Amarelo</a></h3>
+  <div class="company">🇪🇸 <a href="/empresas/46/">Madrid Frutas S.L.</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">25 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Mercado</dt><dd>🇪🇸 Espanha</dd>
+  </dl>
+  <div class="deal-actions" data-deal="29">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="goiaba" data-countries="BR PT">
+  <a class="deal-photo" href="/mercado/goiaba/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/DFC_3945_A_pile_of_glossy_green_guavas_with_one_sliced_open_to_reveal_its_bright_pink_seed-speckled_interior.jpg/500px-DFC_3945_A_pile_of_glossy_green_guavas_with_one_sliced_open_to_reveal_its_bright_pink_seed-speckled_interior.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-06</span>
+  </div>
+  <h3><a href="/mercado/goiaba/">Goiaba</a></h3>
+  <div class="company">🇧🇷 <a href="/empresas/3/">Frutas do Rio Grande do Norte Exportação Ltda</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">50 t</dd>
+    <dt>Incoterm</dt><dd>FOB</dd>
+    <dt>Destino</dt><dd>🇵🇹 Portugal</dd>
+  </dl>
+  <div class="deal-actions" data-deal="13">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="polpa-de-acai-congelada" data-countries="AE AE">
+  <a class="deal-photo" href="/mercado/polpa-de-acai-congelada/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Acai_Berry_Bowl_%2834046937903%29.jpg/500px-Acai_Berry_Bowl_%2834046937903%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-05</span>
+  </div>
+  <h3><a href="/mercado/polpa-de-acai-congelada/">Polpa de Açaí Congelada</a></h3>
+  <div class="company">🇦🇪 <a href="/empresas/40/">Gulf Food Distribution LLC</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">1.000 t</dd>
+    <dt>Incoterm</dt><dd>FCA</dd>
+    <dt>Mercado</dt><dd>🇦🇪 Emirados Árabes</dd>
+  </dl>
+  <div class="deal-actions" data-deal="21">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="amendoa-de-cacau" data-countries="JP JP">
+  <a class="deal-photo" href="/mercado/amendoa-de-cacau/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Fermented_cocoa_beans.png/500px-Fermented_cocoa_beans.png" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-04</span>
+  </div>
+  <h3><a href="/mercado/amendoa-de-cacau/">Amêndoa de Cacau</a></h3>
+  <div class="company">🇯🇵 <a href="/empresas/39/">Tokyo Shokuhin Trading Co</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">50 t</dd>
+    <dt>Incoterm</dt><dd>FCA</dd>
+    <dt>Mercado</dt><dd>🇯🇵 Japão</dd>
+  </dl>
+  <div class="deal-actions" data-deal="57">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="soja-em-grao" data-countries="BR NL">
+  <a class="deal-photo" href="/mercado/soja-em-grao/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Mike_Starkey_Soybean_Harvest_%2852490323652%29.jpg/500px-Mike_Starkey_Soybean_Harvest_%2852490323652%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-04</span>
+  </div>
+  <h3><a href="/mercado/soja-em-grao/">Soja em Grão</a></h3>
+  <div class="company">🇧🇷 <a href="/empresas/14/">Grãos do Centro-Oeste Comércio Ltda</a>
+    </div>
+  <dl>
+    <dt>Volume</dt><dd class="num">1.000 t</dd>
+    <dt>Incoterm</dt><dd>FCA</dd>
+    <dt>Destino</dt><dd>🇳🇱 Países Baixos</dd>
+  </dl>
+  <div class="deal-actions" data-deal="38">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="acucar-refinado-icumsa-45" data-countries="EG EG">
+  <a class="deal-photo" href="/mercado/acucar-refinado-icumsa-45/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Granulated_White_Sugar_with_Large_Crystals%2C_Bright_Front_Light.jpg/500px-Granulated_White_Sugar_with_Large_Crystals%2C_Bright_Front_Light.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-04</span>
+  </div>
+  <h3><a href="/mercado/acucar-refinado-icumsa-45/">Açúcar Refinado ICUMSA 45</a></h3>
+  <div class="company">🇪🇬 <a href="/empresas/50/">Cairo Commodities Co</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">1.000 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Mercado</dt><dd>🇪🇬 Egito</dd>
+  </dl>
+  <div class="deal-actions" data-deal="37">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="chocolate-em-barra" data-countries="BR GB">
+  <a class="deal-photo" href="/mercado/chocolate-em-barra/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/2020-02-23_02_26_30_A_Ghirardelli_Milk_Chocolate_Caramel_Square_broken_into_two_pieces_in_the_Parkway_Village_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg/500px-thumbnail.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-04</span>
+  </div>
+  <h3><a href="/mercado/chocolate-em-barra/">Chocolate em Barra</a></h3>
+  <div class="company">🇧🇷 <a href="/empresas/11/">Cacau Sul da Bahia Indústria e Comércio Ltda</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">500 t</dd>
+    <dt>Incoterm</dt><dd>FOB</dd>
+    <dt>Destino</dt><dd>🇬🇧 Reino Unido</dd>
+  </dl>
+  <div class="deal-actions" data-deal="23">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="leite-em-po-integral" data-countries="BR CN">
+  <a class="deal-photo" href="/mercado/leite-em-po-integral/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Dairy_cows_grazing_with_visible_graze_line.jpg/500px-Dairy_cows_grazing_with_visible_graze_line.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-03</span>
+  </div>
+  <h3><a href="/mercado/leite-em-po-integral/">Leite em Pó Integral</a></h3>
+  <div class="company">🇧🇷 <a href="/empresas/17/">Laticínios Serra Verde Ltda</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">1.000 t</dd>
+    <dt>Incoterm</dt><dd>EXW</dd>
+    <dt>Destino</dt><dd>🇨🇳 China</dd>
+  </dl>
+  <div class="deal-actions" data-deal="58">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="cafe-torrado-em-graos" data-countries="CO PT">
+  <a class="deal-photo" href="/mercado/cafe-torrado-em-graos/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Roasted_Coffee_Beans_Texture.jpg/500px-Roasted_Coffee_Beans_Texture.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-02</span>
+  </div>
+  <h3><a href="/mercado/cafe-torrado-em-graos/">Café Torrado em Grãos</a></h3>
+  <div class="company">🇨🇴 <a href="/empresas/18/">Cafetal Andino S.A.S.</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">500 t</dd>
+    <dt>Incoterm</dt><dd>FCA</dd>
+    <dt>Destino</dt><dd>🇵🇹 Portugal</dd>
+  </dl>
+  <div class="deal-actions" data-deal="27">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="polpa-de-acai-congelada" data-countries="KR KR">
+  <a class="deal-photo" href="/mercado/polpa-de-acai-congelada/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Acai_Berry_Bowl_%2834046937903%29.jpg/500px-Acai_Berry_Bowl_%2834046937903%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-10-01</span>
+  </div>
+  <h3><a href="/mercado/polpa-de-acai-congelada/">Polpa de Açaí Congelada</a></h3>
+  <div class="company">🇰🇷 <a href="/empresas/47/">Seoul Food Import Co</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">20 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Mercado</dt><dd>🇰🇷 Coreia do Sul</dd>
+  </dl>
+  <div class="deal-actions" data-deal="55">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="mel-organico" data-countries="AR DE">
+  <a class="deal-photo" href="/mercado/mel-organico/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Western_honey_bee_on_a_honeycomb.jpg/500px-Western_honey_bee_on_a_honeycomb.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-10-01</span>
+  </div>
+  <h3><a href="/mercado/mel-organico/">Mel Orgânico</a></h3>
+  <div class="company">🇦🇷 <a href="/empresas/25/">Pampa Agro S.A.</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">50 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Destino</dt><dd>🇩🇪 Alemanha</dd>
+  </dl>
+  <div class="deal-actions" data-deal="1">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="mangostao" data-countries="CN CN">
+  <a class="deal-photo" href="/mercado/mangostao/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Sweet_mangosteen.jpg/500px-Sweet_mangosteen.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-09-29</span>
+  </div>
+  <h3><a href="/mercado/mangostao/">Mangostão</a></h3>
+  <div class="company">🇨🇳 <a href="/empresas/38/">Shanghai Golden Harvest Trading Co</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">20 t</dd>
+    <dt>Incoterm</dt><dd>FCA</dd>
+    <dt>Mercado</dt><dd>🇨🇳 China</dd>
+  </dl>
+  <div class="deal-actions" data-deal="68">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="polpa-de-acai-congelada" data-countries="BR AE">
+  <a class="deal-photo" href="/mercado/polpa-de-acai-congelada/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Acai_Berry_Bowl_%2834046937903%29.jpg/500px-Acai_Berry_Bowl_%2834046937903%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-09-29</span>
+  </div>
+  <h3><a href="/mercado/polpa-de-acai-congelada/">Polpa de Açaí Congelada</a></h3>
+  <div class="company">🇧🇷 <a href="/empresas/2/">Agrícola Vale do São Francisco S.A.</a>
+    </div>
+  <dl>
+    <dt>Volume</dt><dd class="num">25 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Destino</dt><dd>🇦🇪 Emirados Árabes</dd>
+  </dl>
+  <div class="deal-actions" data-deal="51">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="buy" data-product="mel-organico" data-countries="DE DE">
+  <a class="deal-photo" href="/mercado/mel-organico/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Western_honey_bee_on_a_honeycomb.jpg/500px-Western_honey_bee_on_a_honeycomb.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge buy">Compra</span>
+    <span class="muted">2026-09-27</span>
+  </div>
+  <h3><a href="/mercado/mel-organico/">Mel Orgânico</a></h3>
+  <div class="company">🇩🇪 <a href="/empresas/36/">Hamburg Kaffee Import GmbH</a>
+    <span class="vbadge"><svg class="" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 25l9 9 19-20"/>
+</svg></span></div>
+  <dl>
+    <dt>Volume</dt><dd class="num">25 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Mercado</dt><dd>🇩🇪 Alemanha</dd>
+  </dl>
+  <div class="deal-actions" data-deal="35">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article><article class="deal has-photo" data-item data-side="sell" data-product="soja-em-grao" data-countries="BR CN">
+  <a class="deal-photo" href="/mercado/soja-em-grao/" tabindex="-1" aria-hidden="true"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Mike_Starkey_Soybean_Harvest_%2852490323652%29.jpg/500px-Mike_Starkey_Soybean_Harvest_%2852490323652%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="deal-top">
+    <span class="side-badge sell">Venda</span>
+    <span class="muted">2026-09-27</span>
+  </div>
+  <h3><a href="/mercado/soja-em-grao/">Soja em Grão</a></h3>
+  <div class="company">🇧🇷 <a href="/empresas/14/">Grãos do Centro-Oeste Comércio Ltda</a>
+    </div>
+  <dl>
+    <dt>Volume</dt><dd class="num">1.000 t</dd>
+    <dt>Incoterm</dt><dd>CIF</dd>
+    <dt>Destino</dt><dd>🇨🇳 China</dd>
+  </dl>
+  <div class="deal-actions" data-deal="31">
+    <span class="muted" data-count>0 interessados</span>
+    <button class="btn btn-sm btn-ghost" type="button" data-interest>Tenho interesse</button>
+  </div>
+</article>
+      <p class="empty-state" data-empty hidden>Nenhuma oferta com esses filtros.</p>
+    </div>
+  
+</div>
+
+</main>
+
+<div class="wave" aria-hidden="true">
+  <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 0h1440v38c-180 46-360 64-560 40S420 6 240 22 60 70 0 58z" fill="#fff"/><path d="M0 120V96c220-30 420-36 640-14s420 26 800-20v58z" fill="#304b58"/></svg>
+</div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="/" aria-label="AgroMarket">
+          <svg viewBox="0 0 76 18" aria-hidden="true"><path d="M3 17C10 5 24 1 38 1s28 4 35 16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          <span class="logo-mark">agro<b>market</b></span>
+          <span class="logo-tag">O agro brasileiro <em>mais perto do mundo</em></span>
+        </a>
+        <p class="promoted">Inteligência de mercado · Trade Hub · Rede de negócios</p>
+        <div class="social" aria-label="Redes sociais">
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4 9h4v11H4zM6 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM10 9h4v1.6c.6-1 1.9-1.9 3.6-1.9 3.4 0 4.4 2 4.4 5.4V20h-4v-5.2c0-1.4-.3-2.6-1.8-2.6s-2.2 1-2.2 2.6V20h-4z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 8.2a3 3 0 0 0-2-2C18.2 5.7 12 5.7 12 5.7s-6.2 0-8 .5a3 3 0 0 0-2 2A31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2 2c1.8.5 8 .5 8 .5s6.2 0 8-.5a3 3 0 0 0 2-2 31 31 0 0 0 .4-3.8 31 31 0 0 0-.4-3.8zM10 15V9l5.2 3z"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg></a>
+        </div>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="/mercado/">Inteligência de Mercado</a></li>
+        <li><a href="/trade-hub/">Ofertas ao vivo</a></li>
+        <li><a href="/trade-hub/empresas/">Empresas</a></li>
+        <li><a href="/#camadas">Como funciona</a></li>
+        <li><a href="/#rede">A Rede</a></li>
+        <li><a href="#" data-open="contact">Fale com o time</a></li>
+        <li><a href="/creditos/">Créditos das fotos</a></li>
+      </ul>
+      <form class="newsletter" id="newsletter" novalidate>
+        <div class="eyebrow" style="color: var(--gold)">Boletim AgroMarket</div>
+        <h3>Sinais semanais dos seus produtos</h3>
+        <p>Preços, novos fornecedores e compradores — grátis, no seu e-mail.</p>
+        <div class="row">
+          <label class="sr-only" for="nl-email">E-mail</label>
+          <input id="nl-email" type="email" name="email" placeholder="voce@empresa.com.br" required>
+          <button class="btn" type="submit">Cadastrar</button>
+        </div>
+        <span class="field-label" style="color:#fff;font-size:13px">Produtos que você acompanha (opcional, até 5)</span>
+        <div class="chips" data-follow>
+          <button type="button" class="chip" aria-pressed="false" data-slug="abacate-hass">Abacate Hass</button><button type="button" class="chip" aria-pressed="false" data-slug="abacaxi-perola">Abacaxi Pérola</button><button type="button" class="chip" aria-pressed="false" data-slug="amendoa-de-cacau">Amêndoa de Cacau</button><button type="button" class="chip" aria-pressed="false" data-slug="acucar-refinado-icumsa-45">Açúcar Refinado ICUMSA 45</button><button type="button" class="chip" aria-pressed="false" data-slug="acucar-vhp">Açúcar VHP</button><button type="button" class="chip" aria-pressed="false" data-slug="cafe-arabica-verde">Café Arábica Verde</button><button type="button" class="chip" aria-pressed="false" data-slug="cafe-conilon-verde">Café Conilon Verde</button><button type="button" class="chip" aria-pressed="false" data-slug="cafe-torrado-em-graos">Café Torrado em Grãos</button><button type="button" class="chip" aria-pressed="false" data-slug="castanha-de-caju-w320">Castanha de Caju W320</button><button type="button" class="chip" aria-pressed="false" data-slug="castanha-do-brasil">Castanha-do-Brasil</button><button type="button" class="chip" aria-pressed="false" data-slug="chocolate-em-barra">Chocolate em Barra</button><button type="button" class="chip" aria-pressed="false" data-slug="file-de-tilapia-congelado">Filé de Tilápia Congelado</button>
+        </div>
+        <small data-msg>Ao se cadastrar você concorda em receber e-mails. Cancele quando quiser.</small>
+      </form>
+    </div>
+    <p class="legal">© 2026 AgroMarket. Dados de demonstração. Todas as análises são geradas a partir da classificação própria de produtos e da resolução de empresas da plataforma.</p>
+  </div>
+</footer>
+
+<!-- Modal: checagem de viabilidade -->
+<dialog id="dlg-feasibility" aria-labelledby="feas-title">
+  <button class="modal-close" type="button" data-close aria-label="Fechar">×</button>
+  <div class="modal-body">
+    <div class="eyebrow" data-kind-label>Grátis · sem conta</div>
+    <h2 id="feas-title">Checagem de viabilidade</h2>
+    <p data-kind-help>Um relatório curto sobre quais mercados e contrapartes são realistas para o seu produto.</p>
+    <form id="feasibility-form" novalidate>
+      <input type="hidden" name="kind" value="export">
+      <div class="form-grid">
+        <label class="field full"><span>Produto</span>
+          <select name="product" required>
+            <option value="">Selecione o produto…</option>
+            <option value="abacate-hass">Abacate Hass · NCM 0804.40</option><option value="abacaxi-perola">Abacaxi Pérola · NCM 0804.30</option><option value="amendoa-de-cacau">Amêndoa de Cacau · NCM 1801.00</option><option value="acucar-refinado-icumsa-45">Açúcar Refinado ICUMSA 45 · NCM 1701.99</option><option value="acucar-vhp">Açúcar VHP · NCM 1701.14</option><option value="cafe-arabica-verde">Café Arábica Verde · NCM 0901.11</option><option value="cafe-conilon-verde">Café Conilon Verde · NCM 0901.11</option><option value="cafe-torrado-em-graos">Café Torrado em Grãos · NCM 0901.21</option><option value="castanha-de-caju-w320">Castanha de Caju W320 · NCM 0801.32</option><option value="castanha-do-brasil">Castanha-do-Brasil · NCM 0801.21</option><option value="chocolate-em-barra">Chocolate em Barra · NCM 1806.32</option><option value="file-de-tilapia-congelado">Filé de Tilápia Congelado · NCM 0304.61</option><option value="goiaba">Goiaba · NCM 0804.50</option><option value="leite-em-po-integral">Leite em Pó Integral · NCM 0402.21</option><option value="manga">Manga · NCM 0804.50</option><option value="mangostao">Mangostão · NCM 0804.50</option><option value="mel-organico">Mel Orgânico · NCM 0409.00</option><option value="mel-silvestre">Mel Silvestre · NCM 0409.00</option><option value="melao-amarelo">Melão Amarelo · NCM 0807.19</option><option value="milho-amarelo">Milho Amarelo · NCM 1005.90</option><option value="polpa-de-acai-congelada">Polpa de Açaí Congelada · NCM 0811.90</option><option value="soja-em-grao">Soja em Grão · NCM 1201.90</option><option value="suco-de-laranja-concentrado-fcoj">Suco de Laranja Concentrado (FCOJ) · NCM 2009.11</option><option value="oleo-de-soja-bruto">Óleo de Soja Bruto · NCM 1507.10</option>
+          </select></label>
+        <label class="field"><span data-country-label>País de origem</span>
+          <select name="country" required>
+            <option value="DE" >🇩🇪 Alemanha</option><option value="AR" >🇦🇷 Argentina</option><option value="SA" >🇸🇦 Arábia Saudita</option><option value="BO" >🇧🇴 Bolívia</option><option value="BR" selected>🇧🇷 Brasil</option><option value="BE" >🇧🇪 Bélgica</option><option value="CA" >🇨🇦 Canadá</option><option value="CN" >🇨🇳 China</option><option value="CO" >🇨🇴 Colômbia</option><option value="KR" >🇰🇷 Coreia do Sul</option><option value="CR" >🇨🇷 Costa Rica</option><option value="CI" >🇨🇮 Costa do Marfim</option><option value="EG" >🇪🇬 Egito</option><option value="AE" >🇦🇪 Emirados Árabes</option><option value="ES" >🇪🇸 Espanha</option><option value="US" >🇺🇸 Estados Unidos</option><option value="ET" >🇪🇹 Etiópia</option><option value="FR" >🇫🇷 França</option><option value="GH" >🇬🇭 Gana</option><option value="IT" >🇮🇹 Itália</option><option value="JP" >🇯🇵 Japão</option><option value="MX" >🇲🇽 México</option><option value="NL" >🇳🇱 Países Baixos</option><option value="PE" >🇵🇪 Peru</option><option value="PT" >🇵🇹 Portugal</option><option value="GB" >🇬🇧 Reino Unido</option><option value="RU" >🇷🇺 Rússia</option><option value="TH" >🇹🇭 Tailândia</option><option value="VN" >🇻🇳 Vietnã</option><option value="IN" >🇮🇳 Índia</option>
+          </select></label>
+        <label class="field"><span>Empresa</span><input type="text" name="company" placeholder="Opcional"></label>
+        <label class="field full"><span>E-mail para receber o relatório</span><input type="email" name="email" required placeholder="voce@empresa.com.br"></label>
+      </div>
+      <button class="btn" type="submit">Gerar relatório</button>
+      <span class="err-msg" data-err></span>
+    </form>
+    <div id="feasibility-report" hidden></div>
+  </div>
+</dialog>
+
+<!-- Modal: fale com o time -->
+<dialog id="dlg-contact" aria-labelledby="contact-title">
+  <button class="modal-close" type="button" data-close aria-label="Fechar">×</button>
+  <div class="modal-body">
+    <div class="eyebrow">Fale com o time</div>
+    <h2 id="contact-title">Conte o que você negocia</h2>
+    <form id="contact-form" novalidate>
+      <div class="form-grid">
+        <label class="field"><span>Nome</span><input type="text" name="name" required></label>
+        <label class="field"><span>Empresa</span><input type="text" name="company"></label>
+        <label class="field full"><span>E-mail</span><input type="email" name="email" required></label>
+        <label class="field full"><span>Mensagem</span><textarea name="message" rows="3"></textarea></label>
+      </div>
+      <button class="btn" type="submit">Enviar</button>
+      <span class="err-msg" data-err></span>
+    </form>
+  </div>
+</dialog>
+
+<script src="/static/js/app.js?v=2" defer></script>
+
+</body>
+</html>

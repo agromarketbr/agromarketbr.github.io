@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="pt-BR" data-static data-base="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trade Hub — AgroMarket</title>
+  <meta name="description" content="Inteligência de mercado para o agro brasileiro sobre uma classificação própria de produtos — e uma rede onde exportadores e importadores se encontram.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css?v=2">
+</head>
+<body>
+<a class="sr-only" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="/" aria-label="AgroMarket — início">
+      <svg viewBox="0 0 76 18" aria-hidden="true"><path d="M3 17C10 5 24 1 38 1s28 4 35 16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+      <span class="logo-mark">agro<b>market</b></span>
+      <span class="logo-tag">O agro brasileiro <em>mais perto do mundo</em></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="main-nav" id="main-nav" aria-label="Principal">
+      <a href="/mercado/" >Inteligência de Mercado</a>
+      <a href="/trade-hub/" aria-current="page">Trade Hub</a>
+      <a href="/#camadas">Como funciona</a>
+      <a href="/#rede">A Rede</a>
+      <a href="#" data-open="contact">Contato</a>
+    </nav>
+    <div class="header-actions">
+      <span class="account-pill">Já tem uma conta? <a href="#" data-open="contact">Login</a></span>
+      <span class="lang" title="Idioma">PT</span>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<section class="catalog-hero hub-hero" style="--band-img: url('https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Port_Santos.jpg/960px-Port_Santos.jpg')">
+  <div class="container">
+    <div class="eyebrow">Trade Hub</div>
+    <h1>Encontre com quem negociar</h1>
+    <p class="lead">Empresas resolvidas a partir de registros de embarque e ofertas de compra e venda abertas agora. Demonstrar interesse numa oferta vira sinal de demanda — e entra no ranking da página inicial.</p>
+  </div>
+</section>
+<div class="container">
+  <nav class="tabs" aria-label="Seções do Trade Hub">
+    <a href="/trade-hub/" >Ofertas ao vivo</a>
+    <a href="/trade-hub/empresas/" aria-current="page">Empresas</a>
+  </nav>
+  <form class="filter-bar" method="get" data-autosubmit>
+    <input type="hidden" name="aba" value="empresas">
+    
+    <label class="field"><span>Buscar empresa</span><input type="search" name="q" value="" placeholder="Nome ou grafia…"></label>
+    <label class="field"><span>Papel</span><select name="papel">
+      <option value="">Todos</option>
+      <option value="exporter" >Exportadores</option>
+      <option value="importer" >Importadores</option></select></label>
+    
+    <label class="field"><span>Produto</span><select name="produto">
+      <option value="">Todos os produtos</option>
+      <option value="abacate-hass" >Abacate Hass</option><option value="abacaxi-perola" >Abacaxi Pérola</option><option value="amendoa-de-cacau" >Amêndoa de Cacau</option><option value="acucar-refinado-icumsa-45" >Açúcar Refinado ICUMSA 45</option><option value="acucar-vhp" >Açúcar VHP</option><option value="cafe-arabica-verde" >Café Arábica Verde</option><option value="cafe-conilon-verde" >Café Conilon Verde</option><option value="cafe-torrado-em-graos" >Café Torrado em Grãos</option><option value="castanha-de-caju-w320" >Castanha de Caju W320</option><option value="castanha-do-brasil" >Castanha-do-Brasil</option><option value="chocolate-em-barra" >Chocolate em Barra</option><option value="file-de-tilapia-congelado" >Filé de Tilápia Congelado</option><option value="goiaba" >Goiaba</option><option value="leite-em-po-integral" >Leite em Pó Integral</option><option value="manga" >Manga</option><option value="mangostao" >Mangostão</option><option value="mel-organico" >Mel Orgânico</option><option value="mel-silvestre" >Mel Silvestre</option><option value="melao-amarelo" >Melão Amarelo</option><option value="milho-amarelo" >Milho Amarelo</option><option value="polpa-de-acai-congelada" >Polpa de Açaí Congelada</option><option value="soja-em-grao" >Soja em Grão</option><option value="suco-de-laranja-concentrado-fcoj" >Suco de Laranja Concentrado (FCOJ)</option><option value="oleo-de-soja-bruto" >Óleo de Soja Bruto</option></select></label>
+    <label class="field"><span>País</span><select name="pais">
+      <option value="">Todos os países</option>
+      <option value="DE" >🇩🇪 Alemanha</option><option value="AR" >🇦🇷 Argentina</option><option value="SA" >🇸🇦 Arábia Saudita</option><option value="BO" >🇧🇴 Bolívia</option><option value="BR" >🇧🇷 Brasil</option><option value="BE" >🇧🇪 Bélgica</option><option value="CA" >🇨🇦 Canadá</option><option value="CN" >🇨🇳 China</option><option value="CO" >🇨🇴 Colômbia</option><option value="KR" >🇰🇷 Coreia do Sul</option><option value="CR" >🇨🇷 Costa Rica</option><option value="CI" >🇨🇮 Costa do Marfim</option><option value="EG" >🇪🇬 Egito</option><option value="AE" >🇦🇪 Emirados Árabes</option><option value="ES" >🇪🇸 Espanha</option><option value="US" >🇺🇸 Estados Unidos</option><option value="ET" >🇪🇹 Etiópia</option><option value="FR" >🇫🇷 França</option><option value="GH" >🇬🇭 Gana</option><option value="IT" >🇮🇹 Itália</option><option value="JP" >🇯🇵 Japão</option><option value="MX" >🇲🇽 México</option><option value="NL" >🇳🇱 Países Baixos</option><option value="PE" >🇵🇪 Peru</option><option value="PT" >🇵🇹 Portugal</option><option value="GB" >🇬🇧 Reino Unido</option><option value="RU" >🇷🇺 Rússia</option><option value="TH" >🇹🇭 Tailândia</option><option value="VN" >🇻🇳 Vietnã</option><option value="IN" >🇮🇳 Índia</option></select></label>
+  </form>
+
+  
+    <p class="muted" data-count data-unit="empresas">58 empresas</p>
+    <div class="company-list" data-items>
+      
+      <a class="company-card" href="/empresas/42/" data-item data-key="pacific coast foods" data-role="importer" data-country="US" data-products=" cafe-arabica-verde,cafe-conilon-verde,cafe-torrado-em-graos,manga,mangostao,abacate-hass,suco-de-laranja-concentrado-fcoj,polpa-de-acai-congelada,amendoa-de-cacau,chocolate-em-barra,castanha-do-brasil,castanha-de-caju-w320,mel-silvestre,mel-organico,file-de-tilapia-congelado ">
+        <b>Pacific Coast Foods Inc</b>
+        <span class="meta">🇺🇸 Los Angeles, Estados Unidos · Importador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 180,1 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/32/" data-item data-key="brussels chocolatiers" data-role="both" data-country="BE" data-products=" chocolate-em-barra,suco-de-laranja-concentrado-fcoj,amendoa-de-cacau ">
+        <b>Brussels Chocolatiers N.V.</b>
+        <span class="meta">🇧🇪 Bruxelas, Bélgica · Exporta e importa · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 64,2 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/37/" data-item data-key="rotterdam fresh produce" data-role="importer" data-country="NL" data-products=" manga,goiaba,abacate-hass,abacaxi-perola,melao-amarelo,suco-de-laranja-concentrado-fcoj,amendoa-de-cacau,castanha-de-caju-w320,soja-em-grao ">
+        <b>Rotterdam Fresh Produce B.V.</b>
+        <span class="meta">🇳🇱 Roterdã, Países Baixos · Importador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 59,7 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/19/" data-item data-key="mekong agro exportacao" data-role="exporter" data-country="VN" data-products=" cafe-conilon-verde,castanha-de-caju-w320,mel-silvestre,file-de-tilapia-congelado ">
+        <b>Mekong Agro Export Co</b>
+        <span class="meta">🇻🇳 Ho Chi Minh, Vietnã · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 59,2 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/45/" data-item data-key="london fine foods" data-role="importer" data-country="GB" data-products=" manga,abacate-hass,melao-amarelo,chocolate-em-barra,castanha-do-brasil,mel-silvestre ">
+        <b>London Fine Foods Ltd</b>
+        <span class="meta">🇬🇧 Londres, Reino Unido · Importador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 55,8 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">3</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/36/" data-item data-key="hamburg kaffee import" data-role="importer" data-country="DE" data-products=" cafe-arabica-verde,cafe-conilon-verde,amendoa-de-cacau,mel-silvestre,mel-organico ">
+        <b>Hamburg Kaffee Import GmbH</b>
+        <span class="meta">🇩🇪 Hamburgo, Alemanha · Importador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 49,9 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">3</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/34/" data-item data-key="trieste torrefazione" data-role="both" data-country="IT" data-products=" cafe-torrado-em-graos,cafe-arabica-verde,cafe-conilon-verde ">
+        <b>Trieste Torrefazione S.p.A.</b>
+        <span class="meta">🇮🇹 Trieste, Itália · Exporta e importa · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 40,2 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">4</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/38/" data-item data-key="shanghai golden harvest trading" data-role="importer" data-country="CN" data-products=" cafe-arabica-verde,cafe-torrado-em-graos,mangostao,abacate-hass,suco-de-laranja-concentrado-fcoj,acucar-vhp,acucar-refinado-icumsa-45,castanha-de-caju-w320,soja-em-grao,milho-amarelo,oleo-de-soja-bruto,leite-em-po-integral ">
+        <b>Shanghai Golden Harvest Trading Co</b>
+        <span class="meta">🇨🇳 Xangai, China · Importador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 39,9 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">3</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/22/" data-item data-key="abidjan cocoa traders" data-role="exporter" data-country="CI" data-products=" amendoa-de-cacau ">
+        <b>Abidjan Cocoa Traders</b>
+        <span class="meta">🇨🇮 Abidjan, Costa do Marfim · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 34,2 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">3</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/40/" data-item data-key="gulf food distribution" data-role="importer" data-country="AE" data-products=" cafe-torrado-em-graos,mangostao,polpa-de-acai-congelada,acucar-vhp,acucar-refinado-icumsa-45,chocolate-em-barra,castanha-de-caju-w320,leite-em-po-integral ">
+        <b>Gulf Food Distribution LLC</b>
+        <span class="meta">🇦🇪 Dubai, Emirados Árabes · Importador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 34,0 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">3</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/33/" data-item data-key="bremen schokoladen" data-role="exporter" data-country="DE" data-products=" chocolate-em-barra ">
+        <b>Bremen Schokoladen GmbH</b>
+        <span class="meta">🇩🇪 Bremen, Alemanha · Exportador</span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 30,4 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">3</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/28/" data-item data-key="riberalta nuts" data-role="exporter" data-country="BO" data-products=" castanha-do-brasil ">
+        <b>Riberalta Nuts S.R.L.</b>
+        <span class="meta">🇧🇴 Riberalta, Bolívia · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 30,2 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">4</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/39/" data-item data-key="tokyo shokuhin trading" data-role="importer" data-country="JP" data-products=" cafe-arabica-verde,suco-de-laranja-concentrado-fcoj,polpa-de-acai-congelada,amendoa-de-cacau,chocolate-em-barra,milho-amarelo,mel-silvestre ">
+        <b>Tokyo Shokuhin Trading Co</b>
+        <span class="meta">🇯🇵 Tóquio, Japão · Importador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 29,0 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">3</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/21/" data-item data-key="michoacan frutas exportacao de" data-role="exporter" data-country="MX" data-products=" manga,goiaba,abacate-hass,suco-de-laranja-concentrado-fcoj ">
+        <b>Michoacán Frutas Exportadora S.A. de C.V.</b>
+        <span class="meta">🇲🇽 Uruapan, México · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 24,6 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">3</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/18/" data-item data-key="cafetal andino" data-role="exporter" data-country="CO" data-products=" cafe-arabica-verde,cafe-torrado-em-graos,abacate-hass ">
+        <b>Cafetal Andino S.A.S.</b>
+        <span class="meta">🇨🇴 Medellín, Colômbia · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 24,3 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">5</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/25/" data-item data-key="pampa agro" data-role="exporter" data-country="AR" data-products=" soja-em-grao,milho-amarelo,mel-silvestre,mel-organico,oleo-de-soja-bruto,leite-em-po-integral ">
+        <b>Pampa Agro S.A.</b>
+        <span class="meta">🇦🇷 Rosario, Argentina · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 24,1 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/41/" data-item data-key="riyadh agri trading" data-role="importer" data-country="SA" data-products=" cafe-torrado-em-graos,abacate-hass,acucar-vhp,acucar-refinado-icumsa-45,mel-silvestre,file-de-tilapia-congelado,leite-em-po-integral ">
+        <b>Riyadh Agri Trading Co</b>
+        <span class="meta">🇸🇦 Riade, Arábia Saudita · Importador</span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 24,1 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/43/" data-item data-key="atlantic specialty coffee" data-role="importer" data-country="US" data-products=" cafe-arabica-verde,cafe-conilon-verde,cafe-torrado-em-graos ">
+        <b>Atlantic Specialty Coffee Inc</b>
+        <span class="meta">🇺🇸 Nova York, Estados Unidos · Importador</span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 23,4 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">3</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/23/" data-item data-key="kumasi cocoa" data-role="exporter" data-country="GH" data-products=" amendoa-de-cacau ">
+        <b>Kumasi Cocoa Ltd</b>
+        <span class="meta">🇬🇭 Kumasi, Gana · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 23,4 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">3</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/7/" data-item data-key="cooperativa cafeeira do cerrado" data-role="exporter" data-country="BR" data-products=" cafe-arabica-verde,cafe-conilon-verde,cafe-torrado-em-graos ">
+        <b>Cooperativa Cafeeira do Cerrado</b>
+        <span class="meta">🇧🇷 Patrocínio, Brasil · Exportador</span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 23,1 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">4</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/20/" data-item data-key="lima fruits" data-role="exporter" data-country="PE" data-products=" manga,abacate-hass,amendoa-de-cacau,castanha-do-brasil ">
+        <b>Lima Fruits S.A.C.</b>
+        <span class="meta">🇵🇪 Lima, Peru · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 22,8 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/31/" data-item data-key="fujian aquatic foods" data-role="exporter" data-country="CN" data-products=" file-de-tilapia-congelado ">
+        <b>Fujian Aquatic Foods Co</b>
+        <span class="meta">🇨🇳 Fuzhou, China · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 22,7 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/9/" data-item data-key="conilon capixaba comercio" data-role="exporter" data-country="BR" data-products=" cafe-arabica-verde,cafe-conilon-verde,cafe-torrado-em-graos ">
+        <b>Conilon Capixaba Comércio Ltda</b>
+        <span class="meta">🇧🇷 Linhares, Brasil · Exportador</span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 21,9 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">4</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/8/" data-item data-key="cafe mantiqueira exportacao" data-role="exporter" data-country="BR" data-products=" cafe-arabica-verde,cafe-conilon-verde,cafe-torrado-em-graos ">
+        <b>Café Mantiqueira Exportadora Ltda</b>
+        <span class="meta">🇧🇷 Carmo de Minas, Brasil · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 21,2 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">4</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/49/" data-item data-key="antwerp juice terminal" data-role="importer" data-country="BE" data-products=" cafe-arabica-verde,suco-de-laranja-concentrado-fcoj,amendoa-de-cacau ">
+        <b>Antwerp Juice Terminal N.V.</b>
+        <span class="meta">🇧🇪 Antuérpia, Bélgica · Importador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 19,6 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/30/" data-item data-key="gujarat agro exports" data-role="exporter" data-country="IN" data-products=" acucar-vhp,acucar-refinado-icumsa-45,castanha-de-caju-w320,mel-silvestre ">
+        <b>Gujarat Agro Exports Pvt Ltd</b>
+        <span class="meta">🇮🇳 Ahmedabad, Índia · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 15,9 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/15/" data-item data-key="mel do sertao apicultura" data-role="exporter" data-country="BR" data-products=" mel-silvestre,mel-organico ">
+        <b>Mel do Sertão Apicultura Ltda</b>
+        <span class="meta">🇧🇷 Picos, Brasil · Exportador</span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 15,3 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">3</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/54/" data-item data-key="paris epicerie fine" data-role="importer" data-country="FR" data-products=" chocolate-em-barra ">
+        <b>Paris Épicerie Fine SAS</b>
+        <span class="meta">🇫🇷 Paris, França · Importador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 14,3 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/44/" data-item data-key="milano alimentari" data-role="importer" data-country="IT" data-products=" cafe-arabica-verde,cafe-conilon-verde,castanha-do-brasil ">
+        <b>Milano Alimentari S.p.A.</b>
+        <span class="meta">🇮🇹 Milão, Itália · Importador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 14,1 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">3</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/11/" data-item data-key="cacau sul da bahia industria e comercio" data-role="exporter" data-country="BR" data-products=" amendoa-de-cacau,chocolate-em-barra ">
+        <b>Cacau Sul da Bahia Indústria e Comércio Ltda</b>
+        <span class="meta">🇧🇷 Ilhéus, Brasil · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 13,1 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">5</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/35/" data-item data-key="friesland dairy exportacao" data-role="exporter" data-country="NL" data-products=" leite-em-po-integral ">
+        <b>Friesland Dairy Export B.V.</b>
+        <span class="meta">🇳🇱 Leeuwarden, Países Baixos · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 12,6 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/24/" data-item data-key="siam sugar exportacao" data-role="exporter" data-country="TH" data-products=" mangostao,acucar-vhp,acucar-refinado-icumsa-45 ">
+        <b>Siam Sugar Export Co</b>
+        <span class="meta">🇹🇭 Bangkok, Tailândia · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 12,4 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">3</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/6/" data-item data-key="abacates minas gerais agricola" data-role="exporter" data-country="BR" data-products=" manga,goiaba,mangostao,abacate-hass,abacaxi-perola,melao-amarelo,suco-de-laranja-concentrado-fcoj,polpa-de-acai-congelada ">
+        <b>Abacates Minas Gerais Agrícola Ltda</b>
+        <span class="meta">🇧🇷 São Gotardo, Brasil · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 12,2 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/13/" data-item data-key="caju nordeste industria" data-role="exporter" data-country="BR" data-products=" castanha-do-brasil,castanha-de-caju-w320 ">
+        <b>Caju Nordeste Indústria Ltda</b>
+        <span class="meta">🇧🇷 Fortaleza, Brasil · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 11,2 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">3</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/1/" data-item data-key="fazenda boa vista" data-role="exporter" data-country="BR" data-products=" manga,goiaba,mangostao,abacate-hass,abacaxi-perola,melao-amarelo,suco-de-laranja-concentrado-fcoj,polpa-de-acai-congelada ">
+        <b>Fazenda Boa Vista Ltda</b>
+        <span class="meta">🇧🇷 Petrolina, Brasil · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 11,0 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">3</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/50/" data-item data-key="cairo commodities" data-role="importer" data-country="EG" data-products=" cafe-conilon-verde,acucar-vhp,acucar-refinado-icumsa-45,soja-em-grao,milho-amarelo,oleo-de-soja-bruto,leite-em-po-integral ">
+        <b>Cairo Commodities Co</b>
+        <span class="meta">🇪🇬 Cairo, Egito · Importador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 10,9 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/51/" data-item data-key="mumbai agro imports" data-role="importer" data-country="IN" data-products=" cafe-conilon-verde,acucar-vhp,oleo-de-soja-bruto ">
+        <b>Mumbai Agro Imports Pvt Ltd</b>
+        <span class="meta">🇮🇳 Mumbai, Índia · Importador</span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 10,0 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/12/" data-item data-key="castanhas da amazonia exportacao" data-role="exporter" data-country="BR" data-products=" castanha-do-brasil,castanha-de-caju-w320 ">
+        <b>Castanhas da Amazônia Exportação Ltda</b>
+        <span class="meta">🇧🇷 Belém, Brasil · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 9,0 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/29/" data-item data-key="pura vida produce" data-role="exporter" data-country="CR" data-products=" cafe-arabica-verde,abacaxi-perola,melao-amarelo ">
+        <b>Pura Vida Produce S.A.</b>
+        <span class="meta">🇨🇷 San José, Costa Rica · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 8,5 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/53/" data-item data-key="lisboa importacoes" data-role="importer" data-country="PT" data-products=" cafe-torrado-em-graos,manga,goiaba,abacaxi-perola,polpa-de-acai-congelada ">
+        <b>Lisboa Importações Lda</b>
+        <span class="meta">🇵🇹 Lisboa, Portugal · Importador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 7,5 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">4</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/4/" data-item data-key="acai para polpas" data-role="exporter" data-country="BR" data-products=" manga,goiaba,mangostao,abacate-hass,abacaxi-perola,melao-amarelo,suco-de-laranja-concentrado-fcoj,polpa-de-acai-congelada ">
+        <b>Açaí Pará Polpas Ltda</b>
+        <span class="meta">🇧🇷 Belém, Brasil · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 7,3 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">5</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/46/" data-item data-key="madrid frutas" data-role="importer" data-country="ES" data-products=" manga,abacate-hass,abacaxi-perola,melao-amarelo,soja-em-grao ">
+        <b>Madrid Frutas S.L.</b>
+        <span class="meta">🇪🇸 Madri, Espanha · Importador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 7,2 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">4</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/47/" data-item data-key="seoul food import" data-role="importer" data-country="KR" data-products=" cafe-arabica-verde,polpa-de-acai-congelada,castanha-do-brasil,milho-amarelo,oleo-de-soja-bruto ">
+        <b>Seoul Food Import Co</b>
+        <span class="meta">🇰🇷 Seul, Coreia do Sul · Importador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 6,6 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">3</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/52/" data-item data-key="granos de mexico de" data-role="importer" data-country="MX" data-products=" milho-amarelo,file-de-tilapia-congelado,leite-em-po-integral ">
+        <b>Granos de México S.A. de C.V.</b>
+        <span class="meta">🇲🇽 Monterrey, México · Importador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 6,5 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">4</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/2/" data-item data-key="agricola vale do sao francisco" data-role="exporter" data-country="BR" data-products=" manga,goiaba,mangostao,abacate-hass,abacaxi-perola,melao-amarelo,suco-de-laranja-concentrado-fcoj,polpa-de-acai-congelada ">
+        <b>Agrícola Vale do São Francisco S.A.</b>
+        <span class="meta">🇧🇷 Juazeiro, Brasil · Exportador</span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 6,3 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/27/" data-item data-key="sidama highlands coffee" data-role="exporter" data-country="ET" data-products=" cafe-arabica-verde ">
+        <b>Sidama Highlands Coffee PLC</b>
+        <span class="meta">🇪🇹 Addis Abeba, Etiópia · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 6,0 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">3</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/16/" data-item data-key="tilapia parana alimentos" data-role="exporter" data-country="BR" data-products=" file-de-tilapia-congelado ">
+        <b>Tilápia Paraná Alimentos S.A.</b>
+        <span class="meta">🇧🇷 Toledo, Brasil · Exportador</span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 5,6 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">5</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/14/" data-item data-key="graos do centro oeste comercio" data-role="exporter" data-country="BR" data-products=" soja-em-grao,milho-amarelo,oleo-de-soja-bruto ">
+        <b>Grãos do Centro-Oeste Comércio Ltda</b>
+        <span class="meta">🇧🇷 Rio Verde, Brasil · Exportador</span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 5,5 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">5</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/3/" data-item data-key="frutas do rio grande do norte exportacao" data-role="exporter" data-country="BR" data-products=" manga,goiaba,mangostao,abacate-hass,abacaxi-perola,melao-amarelo,suco-de-laranja-concentrado-fcoj,polpa-de-acai-congelada ">
+        <b>Frutas do Rio Grande do Norte Exportação Ltda</b>
+        <span class="meta">🇧🇷 Mossoró, Brasil · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 5,1 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">5</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/5/" data-item data-key="citrus paulista industria" data-role="exporter" data-country="BR" data-products=" manga,goiaba,mangostao,abacate-hass,abacaxi-perola,melao-amarelo,suco-de-laranja-concentrado-fcoj,polpa-de-acai-congelada ">
+        <b>Citrus Paulista Indústria S.A.</b>
+        <span class="meta">🇧🇷 Bebedouro, Brasil · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 5,0 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">5</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/48/" data-item data-key="toronto natural foods" data-role="importer" data-country="CA" data-products=" manga,goiaba,mel-organico,file-de-tilapia-congelado ">
+        <b>Toronto Natural Foods Inc</b>
+        <span class="meta">🇨🇦 Toronto, Canadá · Importador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 4,6 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">3</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/26/" data-item data-key="midwest grain partners" data-role="exporter" data-country="US" data-products=" soja-em-grao,milho-amarelo,oleo-de-soja-bruto ">
+        <b>Midwest Grain Partners Inc</b>
+        <span class="meta">🇺🇸 Chicago, Estados Unidos · Exportador</span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 4,5 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">3</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/10/" data-item data-key="usina santa helena acucar e alcool" data-role="exporter" data-country="BR" data-products=" acucar-vhp,acucar-refinado-icumsa-45 ">
+        <b>Usina Santa Helena Açúcar e Álcool S.A.</b>
+        <span class="meta">🇧🇷 Ribeirão Preto, Brasil · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 4,1 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/17/" data-item data-key="laticinios serra verde" data-role="exporter" data-country="BR" data-products=" leite-em-po-integral ">
+        <b>Laticínios Serra Verde Ltda</b>
+        <span class="meta">🇧🇷 Juiz de Fora, Brasil · Exportador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 2,8 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/55/" data-item data-key="buenos aires frutas" data-role="importer" data-country="AR" data-products=" abacaxi-perola ">
+        <b>Buenos Aires Frutas S.A.</b>
+        <span class="meta">🇦🇷 Buenos Aires, Argentina · Importador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 2,6 mi</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/57/" data-item data-key="hanoi feed import" data-role="importer" data-country="VN" data-products=" milho-amarelo ">
+        <b>Hanoi Feed Import Co</b>
+        <span class="meta">🇻🇳 Hanói, Vietnã · Importador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 335,4 mil</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">2</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/56/" data-item data-key="bangkok feed mill" data-role="importer" data-country="TH" data-products=" soja-em-grao ">
+        <b>Bangkok Feed Mill Co</b>
+        <span class="meta">🇹🇭 Bangkok, Tailândia · Importador</span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">US$ 159,6 mil</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">3</span></span>
+      </a>
+      
+      <a class="company-card" href="/empresas/58/" data-item data-key="moscow food group" data-role="importer" data-country="RU" data-products=" None ">
+        <b>Moscow Food Group LLC</b>
+        <span class="meta">🇷🇺 Moscou, Rússia · Importador · <span class="vbadge">✓ verificada</span></span>
+        <span class="row"><span>Comércio 12 meses</span><b class="num">—</b></span>
+        <span class="row"><span>Grafias resolvidas</span><span class="num">0</span></span>
+      </a>
+      
+      <p class="empty-state" data-empty hidden>Nenhuma empresa encontrada.</p>
+    </div>
+  
+</div>
+
+</main>
+
+<div class="wave" aria-hidden="true">
+  <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 0h1440v38c-180 46-360 64-560 40S420 6 240 22 60 70 0 58z" fill="#fff"/><path d="M0 120V96c220-30 420-36 640-14s420 26 800-20v58z" fill="#304b58"/></svg>
+</div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="/" aria-label="AgroMarket">
+          <svg viewBox="0 0 76 18" aria-hidden="true"><path d="M3 17C10 5 24 1 38 1s28 4 35 16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          <span class="logo-mark">agro<b>market</b></span>
+          <span class="logo-tag">O agro brasileiro <em>mais perto do mundo</em></span>
+        </a>
+        <p class="promoted">Inteligência de mercado · Trade Hub · Rede de negócios</p>
+        <div class="social" aria-label="Redes sociais">
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4 9h4v11H4zM6 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM10 9h4v1.6c.6-1 1.9-1.9 3.6-1.9 3.4 0 4.4 2 4.4 5.4V20h-4v-5.2c0-1.4-.3-2.6-1.8-2.6s-2.2 1-2.2 2.6V20h-4z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 8.2a3 3 0 0 0-2-2C18.2 5.7 12 5.7 12 5.7s-6.2 0-8 .5a3 3 0 0 0-2 2A31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2 2c1.8.5 8 .5 8 .5s6.2 0 8-.5a3 3 0 0 0 2-2 31 31 0 0 0 .4-3.8 31 31 0 0 0-.4-3.8zM10 15V9l5.2 3z"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg></a>
+        </div>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="/mercado/">Inteligência de Mercado</a></li>
+        <li><a href="/trade-hub/">Ofertas ao vivo</a></li>
+        <li><a href="/trade-hub/empresas/">Empresas</a></li>
+        <li><a href="/#camadas">Como funciona</a></li>
+        <li><a href="/#rede">A Rede</a></li>
+        <li><a href="#" data-open="contact">Fale com o time</a></li>
+        <li><a href="/creditos/">Créditos das fotos</a></li>
+      </ul>
+      <form class="newsletter" id="newsletter" novalidate>
+        <div class="eyebrow" style="color: var(--gold)">Boletim AgroMarket</div>
+        <h3>Sinais semanais dos seus produtos</h3>
+        <p>Preços, novos fornecedores e compradores — grátis, no seu e-mail.</p>
+        <div class="row">
+          <label class="sr-only" for="nl-email">E-mail</label>
+          <input id="nl-email" type="email" name="email" placeholder="voce@empresa.com.br" required>
+          <button class="btn" type="submit">Cadastrar</button>
+        </div>
+        <span class="field-label" style="color:#fff;font-size:13px">Produtos que você acompanha (opcional, até 5)</span>
+        <div class="chips" data-follow>
+          <button type="button" class="chip" aria-pressed="false" data-slug="abacate-hass">Abacate Hass</button><button type="button" class="chip" aria-pressed="false" data-slug="abacaxi-perola">Abacaxi Pérola</button><button type="button" class="chip" aria-pressed="false" data-slug="amendoa-de-cacau">Amêndoa de Cacau</button><button type="button" class="chip" aria-pressed="false" data-slug="acucar-refinado-icumsa-45">Açúcar Refinado ICUMSA 45</button><button type="button" class="chip" aria-pressed="false" data-slug="acucar-vhp">Açúcar VHP</button><button type="button" class="chip" aria-pressed="false" data-slug="cafe-arabica-verde">Café Arábica Verde</button><button type="button" class="chip" aria-pressed="false" data-slug="cafe-conilon-verde">Café Conilon Verde</button><button type="button" class="chip" aria-pressed="false" data-slug="cafe-torrado-em-graos">Café Torrado em Grãos</button><button type="button" class="chip" aria-pressed="false" data-slug="castanha-de-caju-w320">Castanha de Caju W320</button><button type="button" class="chip" aria-pressed="false" data-slug="castanha-do-brasil">Castanha-do-Brasil</button><button type="button" class="chip" aria-pressed="false" data-slug="chocolate-em-barra">Chocolate em Barra</button><button type="button" class="chip" aria-pressed="false" data-slug="file-de-tilapia-congelado">Filé de Tilápia Congelado</button>
+        </div>
+        <small data-msg>Ao se cadastrar você concorda em receber e-mails. Cancele quando quiser.</small>
+      </form>
+    </div>
+    <p class="legal">© 2026 AgroMarket. Dados de demonstração. Todas as análises são geradas a partir da classificação própria de produtos e da resolução de empresas da plataforma.</p>
+  </div>
+</footer>
+
+<!-- Modal: checagem de viabilidade -->
+<dialog id="dlg-feasibility" aria-labelledby="feas-title">
+  <button class="modal-close" type="button" data-close aria-label="Fechar">×</button>
+  <div class="modal-body">
+    <div class="eyebrow" data-kind-label>Grátis · sem conta</div>
+    <h2 id="feas-title">Checagem de viabilidade</h2>
+    <p data-kind-help>Um relatório curto sobre quais mercados e contrapartes são realistas para o seu produto.</p>
+    <form id="feasibility-form" novalidate>
+      <input type="hidden" name="kind" value="export">
+      <div class="form-grid">
+        <label class="field full"><span>Produto</span>
+          <select name="product" required>
+            <option value="">Selecione o produto…</option>
+            <option value="abacate-hass">Abacate Hass · NCM 0804.40</option><option value="abacaxi-perola">Abacaxi Pérola · NCM 0804.30</option><option value="amendoa-de-cacau">Amêndoa de Cacau · NCM 1801.00</option><option value="acucar-refinado-icumsa-45">Açúcar Refinado ICUMSA 45 · NCM 1701.99</option><option value="acucar-vhp">Açúcar VHP · NCM 1701.14</option><option value="cafe-arabica-verde">Café Arábica Verde · NCM 0901.11</option><option value="cafe-conilon-verde">Café Conilon Verde · NCM 0901.11</option><option value="cafe-torrado-em-graos">Café Torrado em Grãos · NCM 0901.21</option><option value="castanha-de-caju-w320">Castanha de Caju W320 · NCM 0801.32</option><option value="castanha-do-brasil">Castanha-do-Brasil · NCM 0801.21</option><option value="chocolate-em-barra">Chocolate em Barra · NCM 1806.32</option><option value="file-de-tilapia-congelado">Filé de Tilápia Congelado · NCM 0304.61</option><option value="goiaba">Goiaba · NCM 0804.50</option><option value="leite-em-po-integral">Leite em Pó Integral · NCM 0402.21</option><option value="manga">Manga · NCM 0804.50</option><option value="mangostao">Mangostão · NCM 0804.50</option><option value="mel-organico">Mel Orgânico · NCM 0409.00</option><option value="mel-silvestre">Mel Silvestre · NCM 0409.00</option><option value="melao-amarelo">Melão Amarelo · NCM 0807.19</option><option value="milho-amarelo">Milho Amarelo · NCM 1005.90</option><option value="polpa-de-acai-congelada">Polpa de Açaí Congelada · NCM 0811.90</option><option value="soja-em-grao">Soja em Grão · NCM 1201.90</option><option value="suco-de-laranja-concentrado-fcoj">Suco de Laranja Concentrado (FCOJ) · NCM 2009.11</option><option value="oleo-de-soja-bruto">Óleo de Soja Bruto · NCM 1507.10</option>
+          </select></label>
+        <label class="field"><span data-country-label>País de origem</span>
+          <select name="country" required>
+            <option value="DE" >🇩🇪 Alemanha</option><option value="AR" >🇦🇷 Argentina</option><option value="SA" >🇸🇦 Arábia Saudita</option><option value="BO" >🇧🇴 Bolívia</option><option value="BR" selected>🇧🇷 Brasil</option><option value="BE" >🇧🇪 Bélgica</option><option value="CA" >🇨🇦 Canadá</option><option value="CN" >🇨🇳 China</option><option value="CO" >🇨🇴 Colômbia</option><option value="KR" >🇰🇷 Coreia do Sul</option><option value="CR" >🇨🇷 Costa Rica</option><option value="CI" >🇨🇮 Costa do Marfim</option><option value="EG" >🇪🇬 Egito</option><option value="AE" >🇦🇪 Emirados Árabes</option><option value="ES" >🇪🇸 Espanha</option><option value="US" >🇺🇸 Estados Unidos</option><option value="ET" >🇪🇹 Etiópia</option><option value="FR" >🇫🇷 França</option><option value="GH" >🇬🇭 Gana</option><option value="IT" >🇮🇹 Itália</option><option value="JP" >🇯🇵 Japão</option><option value="MX" >🇲🇽 México</option><option value="NL" >🇳🇱 Países Baixos</option><option value="PE" >🇵🇪 Peru</option><option value="PT" >🇵🇹 Portugal</option><option value="GB" >🇬🇧 Reino Unido</option><option value="RU" >🇷🇺 Rússia</option><option value="TH" >🇹🇭 Tailândia</option><option value="VN" >🇻🇳 Vietnã</option><option value="IN" >🇮🇳 Índia</option>
+          </select></label>
+        <label class="field"><span>Empresa</span><input type="text" name="company" placeholder="Opcional"></label>
+        <label class="field full"><span>E-mail para receber o relatório</span><input type="email" name="email" required placeholder="voce@empresa.com.br"></label>
+      </div>
+      <button class="btn" type="submit">Gerar relatório</button>
+      <span class="err-msg" data-err></span>
+    </form>
+    <div id="feasibility-report" hidden></div>
+  </div>
+</dialog>
+
+<!-- Modal: fale com o time -->
+<dialog id="dlg-contact" aria-labelledby="contact-title">
+  <button class="modal-close" type="button" data-close aria-label="Fechar">×</button>
+  <div class="modal-body">
+    <div class="eyebrow">Fale com o time</div>
+    <h2 id="contact-title">Conte o que você negocia</h2>
+    <form id="contact-form" novalidate>
+      <div class="form-grid">
+        <label class="field"><span>Nome</span><input type="text" name="name" required></label>
+        <label class="field"><span>Empresa</span><input type="text" name="company"></label>
+        <label class="field full"><span>E-mail</span><input type="email" name="email" required></label>
+        <label class="field full"><span>Mensagem</span><textarea name="message" rows="3"></textarea></label>
+      </div>
+      <button class="btn" type="submit">Enviar</button>
+      <span class="err-msg" data-err></span>
+    </form>
+  </div>
+</dialog>
+
+<script src="/static/js/app.js?v=2" defer></script>
+
+</body>
+</html>

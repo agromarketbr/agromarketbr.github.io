@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="pt-BR" data-static data-base="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inteligência de Mercado — AgroMarket</title>
+  <meta name="description" content="Inteligência de mercado para o agro brasileiro sobre uma classificação própria de produtos — e uma rede onde exportadores e importadores se encontram.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css?v=2">
+</head>
+<body>
+<a class="sr-only" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="/" aria-label="AgroMarket — início">
+      <svg viewBox="0 0 76 18" aria-hidden="true"><path d="M3 17C10 5 24 1 38 1s28 4 35 16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+      <span class="logo-mark">agro<b>market</b></span>
+      <span class="logo-tag">O agro brasileiro <em>mais perto do mundo</em></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="main-nav" id="main-nav" aria-label="Principal">
+      <a href="/mercado/" aria-current="page">Inteligência de Mercado</a>
+      <a href="/trade-hub/" >Trade Hub</a>
+      <a href="/#camadas">Como funciona</a>
+      <a href="/#rede">A Rede</a>
+      <a href="#" data-open="contact">Contato</a>
+    </nav>
+    <div class="header-actions">
+      <span class="account-pill">Já tem uma conta? <a href="#" data-open="contact">Login</a></span>
+      <span class="lang" title="Idioma">PT</span>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<section class="catalog-hero">
+  <div class="container catalog-grid">
+    <h1><span style="display:block">Conheça</span>os mercados do agro brasileiro</h1>
+    <form class="filters" method="get" action="/mercado/" data-autosubmit>
+      <label class="field"><span>Buscar produto</span>
+        <input type="search" name="q" value="" placeholder="Buscar produto…"></label>
+      <label class="field"><span>Filtrar por categoria</span>
+        <select name="categoria">
+          <option value="">Selecione por categoria</option>
+          <option value="acucar" >Açúcar, cana-de-açúcar e derivados</option><option value="cacau" >Cacau e chocolates</option><option value="cafes" >Cafés</option><option value="castanhas" >Castanhas, nozes e amendoins</option><option value="cereais" >Cereais e oleaginosas</option><option value="frutas" >Frutas, sucos e seus preparos</option><option value="lacteos" >Lácteos</option><option value="mel" >Mel, própolis e derivados</option><option value="pescados" >Pescados</option><option value="oleos" >Óleos</option>
+        </select></label>
+      <label class="field"><span>Busca por NCM</span>
+        <input type="search" name="ncm" value="" placeholder="Buscar NCM…" inputmode="numeric"></label>
+      <label class="field"><span>Ordenar</span>
+        <select name="ordem">
+          <option value="name" selected>Nome (A–Z)</option>
+          <option value="value" >Maior valor comercializado</option>
+        </select></label>
+    </form>
+  </div>
+  <div class="container">
+    <p class="total" data-count data-total="24">Total de mercados de produto: 24</p>
+  </div>
+</section>
+<section class="container">
+  <div class="product-grid" data-items><article class="product-card" data-item data-name="abacate hass" data-ncm="080440" data-cat="frutas" data-value="24759708.88">
+  <a class="thumb t-frutas" href="/mercado/abacate-hass/" aria-label="Abacate Hass"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Avocado_Hass_-_single_and_halved.jpg/500px-Avocado_Hass_-_single_and_halved.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Abacate Hass</div>
+    <div class="ncm">NCM: 0804.40</div>
+    <a class="cat" href="/mercado/?categoria=frutas">Frutas, sucos e seus preparos</a>
+    <div class="kpis"><span>6 mercados</span><span>US$ 24,8 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/abacate-hass/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="abacaxi perola" data-ncm="080430" data-cat="frutas" data-value="5026142.86">
+  <a class="thumb t-frutas" href="/mercado/abacaxi-perola/" aria-label="Abacaxi Pérola"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/%E0%B4%95%E0%B5%88%E0%B4%A4%E0%B4%9A%E0%B5%8D%E0%B4%9A%E0%B4%95%E0%B5%8D%E0%B4%95.jpg/500px-%E0%B4%95%E0%B5%88%E0%B4%A4%E0%B4%9A%E0%B5%8D%E0%B4%9A%E0%B4%95%E0%B5%8D%E0%B4%95.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Abacaxi Pérola</div>
+    <div class="ncm">NCM: 0804.30</div>
+    <a class="cat" href="/mercado/?categoria=frutas">Frutas, sucos e seus preparos</a>
+    <div class="kpis"><span>4 mercados</span><span>US$ 5,0 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/abacaxi-perola/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="amendoa de cacau" data-ncm="180100" data-cat="cacau" data-value="70455201.47">
+  <a class="thumb t-cacau" href="/mercado/amendoa-de-cacau/" aria-label="Amêndoa de Cacau"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Fermented_cocoa_beans.png/500px-Fermented_cocoa_beans.png" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Amêndoa de Cacau</div>
+    <div class="ncm">NCM: 1801.00</div>
+    <a class="cat" href="/mercado/?categoria=cacau">Cacau e chocolates</a>
+    <div class="kpis"><span>5 mercados</span><span>US$ 70,5 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/amendoa-de-cacau/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="acucar refinado icumsa 45" data-ncm="170199" data-cat="acucar" data-value="3414735.93">
+  <a class="thumb t-acucar" href="/mercado/acucar-refinado-icumsa-45/" aria-label="Açúcar Refinado ICUMSA 45"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Granulated_White_Sugar_with_Large_Crystals%2C_Bright_Front_Light.jpg/500px-Granulated_White_Sugar_with_Large_Crystals%2C_Bright_Front_Light.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Açúcar Refinado ICUMSA 45</div>
+    <div class="ncm">NCM: 1701.99</div>
+    <a class="cat" href="/mercado/?categoria=acucar">Açúcar, cana-de-açúcar e derivados</a>
+    <div class="kpis"><span>4 mercados</span><span>US$ 3,4 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/acucar-refinado-icumsa-45/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="acucar vhp" data-ncm="170114" data-cat="acucar" data-value="4007720.34">
+  <a class="thumb t-acucar" href="/mercado/acucar-vhp/" aria-label="Açúcar VHP"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Harvestor_cutting_sugarcane.jpg/500px-Harvestor_cutting_sugarcane.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Açúcar VHP</div>
+    <div class="ncm">NCM: 1701.14</div>
+    <a class="cat" href="/mercado/?categoria=acucar">Açúcar, cana-de-açúcar e derivados</a>
+    <div class="kpis"><span>5 mercados</span><span>US$ 4,0 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/acucar-vhp/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="cafe arabica verde" data-ncm="090111" data-cat="cafes" data-value="56617011.11">
+  <a class="thumb t-cafes" href="/mercado/cafe-arabica-verde/" aria-label="Café Arábica Verde"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Green_Coffee_Beans_%284075921494%29.jpg/500px-Green_Coffee_Beans_%284075921494%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Café Arábica Verde</div>
+    <div class="ncm">NCM: 0901.11</div>
+    <a class="cat" href="/mercado/?categoria=cafes">Cafés</a>
+    <div class="kpis"><span>7 mercados</span><span>US$ 56,6 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/cafe-arabica-verde/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="cafe conilon verde" data-ncm="090111" data-cat="cafes" data-value="37699631.76">
+  <a class="thumb t-cafes" href="/mercado/cafe-conilon-verde/" aria-label="Café Conilon Verde"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Coffee_Beans_%2821679786518%29.jpg/500px-Coffee_Beans_%2821679786518%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Café Conilon Verde</div>
+    <div class="ncm">NCM: 0901.11</div>
+    <a class="cat" href="/mercado/?categoria=cafes">Cafés</a>
+    <div class="kpis"><span>5 mercados</span><span>US$ 37,7 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/cafe-conilon-verde/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="cafe torrado em graos" data-ncm="090121" data-cat="cafes" data-value="55026706.97">
+  <a class="thumb t-cafes" href="/mercado/cafe-torrado-em-graos/" aria-label="Café Torrado em Grãos"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Roasted_Coffee_Beans_Texture.jpg/500px-Roasted_Coffee_Beans_Texture.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Café Torrado em Grãos</div>
+    <div class="ncm">NCM: 0901.21</div>
+    <a class="cat" href="/mercado/?categoria=cafes">Cafés</a>
+    <div class="kpis"><span>5 mercados</span><span>US$ 55,0 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/cafe-torrado-em-graos/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="castanha de caju w320" data-ncm="080132" data-cat="castanhas" data-value="46334023.04">
+  <a class="thumb t-castanhas" href="/mercado/castanha-de-caju-w320/" aria-label="Castanha de Caju W320"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Cashew_nuts_in_West_Bengal_of_India.jpg/500px-Cashew_nuts_in_West_Bengal_of_India.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Castanha de Caju W320</div>
+    <div class="ncm">NCM: 0801.32</div>
+    <a class="cat" href="/mercado/?categoria=castanhas">Castanhas, nozes e amendoins</a>
+    <div class="kpis"><span>4 mercados</span><span>US$ 46,3 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/castanha-de-caju-w320/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="castanha-do-brasil" data-ncm="080121" data-cat="castanhas" data-value="48390906.9">
+  <a class="thumb t-castanhas" href="/mercado/castanha-do-brasil/" aria-label="Castanha-do-Brasil"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Bertholletia_excelsa_seeds_closeup.jpg/500px-Bertholletia_excelsa_seeds_closeup.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Castanha-do-Brasil</div>
+    <div class="ncm">NCM: 0801.21</div>
+    <a class="cat" href="/mercado/?categoria=castanhas">Castanhas, nozes e amendoins</a>
+    <div class="kpis"><span>4 mercados</span><span>US$ 48,4 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/castanha-do-brasil/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="chocolate em barra" data-ncm="180632" data-cat="cacau" data-value="89774519.41">
+  <a class="thumb t-cacau" href="/mercado/chocolate-em-barra/" aria-label="Chocolate em Barra"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/2020-02-23_02_26_30_A_Ghirardelli_Milk_Chocolate_Caramel_Square_broken_into_two_pieces_in_the_Parkway_Village_section_of_Ewing_Township%2C_Mercer_County%2C_New_Jersey.jpg/500px-thumbnail.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Chocolate em Barra</div>
+    <div class="ncm">NCM: 1806.32</div>
+    <a class="cat" href="/mercado/?categoria=cacau">Cacau e chocolates</a>
+    <div class="kpis"><span>5 mercados</span><span>US$ 89,8 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/chocolate-em-barra/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="file de tilapia congelado" data-ncm="030461" data-cat="pescados" data-value="32645401.16">
+  <a class="thumb t-pescados" href="/mercado/file-de-tilapia-congelado/" aria-label="Filé de Tilápia Congelado"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Tilapia_food_dish.jpg/500px-Tilapia_food_dish.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Filé de Tilápia Congelado</div>
+    <div class="ncm">NCM: 0304.61</div>
+    <a class="cat" href="/mercado/?categoria=pescados">Pescados</a>
+    <div class="kpis"><span>4 mercados</span><span>US$ 32,6 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/file-de-tilapia-congelado/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="goiaba" data-ncm="080450" data-cat="frutas" data-value="4373271.15">
+  <a class="thumb t-frutas" href="/mercado/goiaba/" aria-label="Goiaba"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/DFC_3945_A_pile_of_glossy_green_guavas_with_one_sliced_open_to_reveal_its_bright_pink_seed-speckled_interior.jpg/500px-DFC_3945_A_pile_of_glossy_green_guavas_with_one_sliced_open_to_reveal_its_bright_pink_seed-speckled_interior.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Goiaba</div>
+    <div class="ncm">NCM: 0804.50</div>
+    <a class="cat" href="/mercado/?categoria=frutas">Frutas, sucos e seus preparos</a>
+    <div class="kpis"><span>3 mercados</span><span>US$ 4,4 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/goiaba/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="leite em po integral" data-ncm="040221" data-cat="lacteos" data-value="21638495.73">
+  <a class="thumb t-lacteos" href="/mercado/leite-em-po-integral/" aria-label="Leite em Pó Integral"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Dairy_cows_grazing_with_visible_graze_line.jpg/500px-Dairy_cows_grazing_with_visible_graze_line.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Leite em Pó Integral</div>
+    <div class="ncm">NCM: 0402.21</div>
+    <a class="cat" href="/mercado/?categoria=lacteos">Lácteos</a>
+    <div class="kpis"><span>5 mercados</span><span>US$ 21,6 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/leite-em-po-integral/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="manga" data-ncm="080450" data-cat="frutas" data-value="14986900.48">
+  <a class="thumb t-frutas" href="/mercado/manga/" aria-label="Manga"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Mangos_-_single_and_halved.jpg/500px-Mangos_-_single_and_halved.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Manga</div>
+    <div class="ncm">NCM: 0804.50</div>
+    <a class="cat" href="/mercado/?categoria=frutas">Frutas, sucos e seus preparos</a>
+    <div class="kpis"><span>6 mercados</span><span>US$ 15,0 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/manga/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="mangostao" data-ncm="080450" data-cat="frutas" data-value="15364508.57">
+  <a class="thumb t-frutas" href="/mercado/mangostao/" aria-label="Mangostão"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Sweet_mangosteen.jpg/500px-Sweet_mangosteen.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Mangostão</div>
+    <div class="ncm">NCM: 0804.50</div>
+    <a class="cat" href="/mercado/?categoria=frutas">Frutas, sucos e seus preparos</a>
+    <div class="kpis"><span>3 mercados</span><span>US$ 15,4 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/mangostao/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="mel organico" data-ncm="040900" data-cat="mel" data-value="15118630.45">
+  <a class="thumb t-mel" href="/mercado/mel-organico/" aria-label="Mel Orgânico"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Western_honey_bee_on_a_honeycomb.jpg/500px-Western_honey_bee_on_a_honeycomb.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Mel Orgânico</div>
+    <div class="ncm">NCM: 0409.00</div>
+    <a class="cat" href="/mercado/?categoria=mel">Mel, própolis e derivados</a>
+    <div class="kpis"><span>3 mercados</span><span>US$ 15,1 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/mel-organico/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="mel silvestre" data-ncm="040900" data-cat="mel" data-value="20358747.62">
+  <a class="thumb t-mel" href="/mercado/mel-silvestre/" aria-label="Mel Silvestre"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Antiguan_honey_products_at_an_exhibition_in_Saint_Lucia.jpg/500px-Antiguan_honey_products_at_an_exhibition_in_Saint_Lucia.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Mel Silvestre</div>
+    <div class="ncm">NCM: 0409.00</div>
+    <a class="cat" href="/mercado/?categoria=mel">Mel, própolis e derivados</a>
+    <div class="kpis"><span>5 mercados</span><span>US$ 20,4 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/mel-silvestre/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="melao amarelo" data-ncm="080719" data-cat="frutas" data-value="3923375.93">
+  <a class="thumb t-frutas" href="/mercado/melao-amarelo/" aria-label="Melão Amarelo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Gaia_Melon_%281016454281%29.jpg/500px-Gaia_Melon_%281016454281%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Melão Amarelo</div>
+    <div class="ncm">NCM: 0807.19</div>
+    <a class="cat" href="/mercado/?categoria=frutas">Frutas, sucos e seus preparos</a>
+    <div class="kpis"><span>3 mercados</span><span>US$ 3,9 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/melao-amarelo/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="milho amarelo" data-ncm="100590" data-cat="cereais" data-value="2615959.07">
+  <a class="thumb t-cereais" href="/mercado/milho-amarelo/" aria-label="Milho Amarelo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Corn_on_the_cob_%28sweet_corn%29.jpg/500px-Corn_on_the_cob_%28sweet_corn%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Milho Amarelo</div>
+    <div class="ncm">NCM: 1005.90</div>
+    <a class="cat" href="/mercado/?categoria=cereais">Cereais e oleaginosas</a>
+    <div class="kpis"><span>6 mercados</span><span>US$ 2,6 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/milho-amarelo/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="polpa de acai congelada" data-ncm="081190" data-cat="frutas" data-value="10588342.19">
+  <a class="thumb t-frutas" href="/mercado/polpa-de-acai-congelada/" aria-label="Polpa de Açaí Congelada"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Acai_Berry_Bowl_%2834046937903%29.jpg/500px-Acai_Berry_Bowl_%2834046937903%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Polpa de Açaí Congelada</div>
+    <div class="ncm">NCM: 0811.90</div>
+    <a class="cat" href="/mercado/?categoria=frutas">Frutas, sucos e seus preparos</a>
+    <div class="kpis"><span>4 mercados</span><span>US$ 10,6 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/polpa-de-acai-congelada/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="soja em grao" data-ncm="120190" data-cat="cereais" data-value="4635460.74">
+  <a class="thumb t-cereais" href="/mercado/soja-em-grao/" aria-label="Soja em Grão"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Mike_Starkey_Soybean_Harvest_%2852490323652%29.jpg/500px-Mike_Starkey_Soybean_Harvest_%2852490323652%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Soja em Grão</div>
+    <div class="ncm">NCM: 1201.90</div>
+    <a class="cat" href="/mercado/?categoria=cereais">Cereais e oleaginosas</a>
+    <div class="kpis"><span>5 mercados</span><span>US$ 4,6 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/soja-em-grao/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="suco de laranja concentrado (fcoj)" data-ncm="200911" data-cat="frutas" data-value="22591409.68">
+  <a class="thumb t-frutas" href="/mercado/suco-de-laranja-concentrado-fcoj/" aria-label="Suco de Laranja Concentrado (FCOJ)"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Local_Orange_Variety_of_Kozan_-_Kozan_Yerli_Portakal_04.jpg/500px-Local_Orange_Variety_of_Kozan_-_Kozan_Yerli_Portakal_04.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Suco de Laranja Concentrado (FCOJ)</div>
+    <div class="ncm">NCM: 2009.11</div>
+    <a class="cat" href="/mercado/?categoria=frutas">Frutas, sucos e seus preparos</a>
+    <div class="kpis"><span>5 mercados</span><span>US$ 22,6 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/suco-de-laranja-concentrado-fcoj/">Saiba mais</a>
+  </div>
+</article><article class="product-card" data-item data-name="oleo de soja bruto" data-ncm="150710" data-cat="oleos" data-value="9739265.4">
+  <a class="thumb t-oleos" href="/mercado/oleo-de-soja-bruto/" aria-label="Óleo de Soja Bruto"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Mike_Starkey_Soybean_Harvest_%2852490323277%29.jpg/500px-Mike_Starkey_Soybean_Harvest_%2852490323277%29.jpg" alt="" loading="lazy" decoding="async"></a>
+  <div class="body">
+    <div class="name">Óleo de Soja Bruto</div>
+    <div class="ncm">NCM: 1507.10</div>
+    <a class="cat" href="/mercado/?categoria=oleos">Óleos</a>
+    <div class="kpis"><span>4 mercados</span><span>US$ 9,7 mi/ano</span></div>
+    <a class="btn btn-sm" href="/mercado/oleo-de-soja-bruto/">Saiba mais</a>
+  </div>
+</article></div>
+  <div class="empty-state" data-empty hidden><p>Nenhum produto encontrado com esses filtros.</p><a class="btn btn-sm" href="/mercado/">Limpar filtros</a></div>
+</section>
+
+</main>
+
+<div class="wave" aria-hidden="true">
+  <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 0h1440v38c-180 46-360 64-560 40S420 6 240 22 60 70 0 58z" fill="#fff"/><path d="M0 120V96c220-30 420-36 640-14s420 26 800-20v58z" fill="#304b58"/></svg>
+</div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="/" aria-label="AgroMarket">
+          <svg viewBox="0 0 76 18" aria-hidden="true"><path d="M3 17C10 5 24 1 38 1s28 4 35 16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          <span class="logo-mark">agro<b>market</b></span>
+          <span class="logo-tag">O agro brasileiro <em>mais perto do mundo</em></span>
+        </a>
+        <p class="promoted">Inteligência de mercado · Trade Hub · Rede de negócios</p>
+        <div class="social" aria-label="Redes sociais">
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4 9h4v11H4zM6 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM10 9h4v1.6c.6-1 1.9-1.9 3.6-1.9 3.4 0 4.4 2 4.4 5.4V20h-4v-5.2c0-1.4-.3-2.6-1.8-2.6s-2.2 1-2.2 2.6V20h-4z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 8.2a3 3 0 0 0-2-2C18.2 5.7 12 5.7 12 5.7s-6.2 0-8 .5a3 3 0 0 0-2 2A31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2 2c1.8.5 8 .5 8 .5s6.2 0 8-.5a3 3 0 0 0 2-2 31 31 0 0 0 .4-3.8 31 31 0 0 0-.4-3.8zM10 15V9l5.2 3z"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg></a>
+        </div>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="/mercado/">Inteligência de Mercado</a></li>
+        <li><a href="/trade-hub/">Ofertas ao vivo</a></li>
+        <li><a href="/trade-hub/empresas/">Empresas</a></li>
+        <li><a href="/#camadas">Como funciona</a></li>
+        <li><a href="/#rede">A Rede</a></li>
+        <li><a href="#" data-open="contact">Fale com o time</a></li>
+        <li><a href="/creditos/">Créditos das fotos</a></li>
+      </ul>
+      <form class="newsletter" id="newsletter" novalidate>
+        <div class="eyebrow" style="color: var(--gold)">Boletim AgroMarket</div>
+        <h3>Sinais semanais dos seus produtos</h3>
+        <p>Preços, novos fornecedores e compradores — grátis, no seu e-mail.</p>
+        <div class="row">
+          <label class="sr-only" for="nl-email">E-mail</label>
+          <input id="nl-email" type="email" name="email" placeholder="voce@empresa.com.br" required>
+          <button class="btn" type="submit">Cadastrar</button>
+        </div>
+        <span class="field-label" style="color:#fff;font-size:13px">Produtos que você acompanha (opcional, até 5)</span>
+        <div class="chips" data-follow>
+          <button type="button" class="chip" aria-pressed="false" data-slug="abacate-hass">Abacate Hass</button><button type="button" class="chip" aria-pressed="false" data-slug="abacaxi-perola">Abacaxi Pérola</button><button type="button" class="chip" aria-pressed="false" data-slug="amendoa-de-cacau">Amêndoa de Cacau</button><button type="button" class="chip" aria-pressed="false" data-slug="acucar-refinado-icumsa-45">Açúcar Refinado ICUMSA 45</button><button type="button" class="chip" aria-pressed="false" data-slug="acucar-vhp">Açúcar VHP</button><button type="button" class="chip" aria-pressed="false" data-slug="cafe-arabica-verde">Café Arábica Verde</button><button type="button" class="chip" aria-pressed="false" data-slug="cafe-conilon-verde">Café Conilon Verde</button><button type="button" class="chip" aria-pressed="false" data-slug="cafe-torrado-em-graos">Café Torrado em Grãos</button><button type="button" class="chip" aria-pressed="false" data-slug="castanha-de-caju-w320">Castanha de Caju W320</button><button type="button" class="chip" aria-pressed="false" data-slug="castanha-do-brasil">Castanha-do-Brasil</button><button type="button" class="chip" aria-pressed="false" data-slug="chocolate-em-barra">Chocolate em Barra</button><button type="button" class="chip" aria-pressed="false" data-slug="file-de-tilapia-congelado">Filé de Tilápia Congelado</button>
+        </div>
+        <small data-msg>Ao se cadastrar você concorda em receber e-mails. Cancele quando quiser.</small>
+      </form>
+    </div>
+    <p class="legal">© 2026 AgroMarket. Dados de demonstração. Todas as análises são geradas a partir da classificação própria de produtos e da resolução de empresas da plataforma.</p>
+  </div>
+</footer>
+
+<!-- Modal: checagem de viabilidade -->
+<dialog id="dlg-feasibility" aria-labelledby="feas-title">
+  <button class="modal-close" type="button" data-close aria-label="Fechar">×</button>
+  <div class="modal-body">
+    <div class="eyebrow" data-kind-label>Grátis · sem conta</div>
+    <h2 id="feas-title">Checagem de viabilidade</h2>
+    <p data-kind-help>Um relatório curto sobre quais mercados e contrapartes são realistas para o seu produto.</p>
+    <form id="feasibility-form" novalidate>
+      <input type="hidden" name="kind" value="export">
+      <div class="form-grid">
+        <label class="field full"><span>Produto</span>
+          <select name="product" required>
+            <option value="">Selecione o produto…</option>
+            <option value="abacate-hass">Abacate Hass · NCM 0804.40</option><option value="abacaxi-perola">Abacaxi Pérola · NCM 0804.30</option><option value="amendoa-de-cacau">Amêndoa de Cacau · NCM 1801.00</option><option value="acucar-refinado-icumsa-45">Açúcar Refinado ICUMSA 45 · NCM 1701.99</option><option value="acucar-vhp">Açúcar VHP · NCM 1701.14</option><option value="cafe-arabica-verde">Café Arábica Verde · NCM 0901.11</option><option value="cafe-conilon-verde">Café Conilon Verde · NCM 0901.11</option><option value="cafe-torrado-em-graos">Café Torrado em Grãos · NCM 0901.21</option><option value="castanha-de-caju-w320">Castanha de Caju W320 · NCM 0801.32</option><option value="castanha-do-brasil">Castanha-do-Brasil · NCM 0801.21</option><option value="chocolate-em-barra">Chocolate em Barra · NCM 1806.32</option><option value="file-de-tilapia-congelado">Filé de Tilápia Congelado · NCM 0304.61</option><option value="goiaba">Goiaba · NCM 0804.50</option><option value="leite-em-po-integral">Leite em Pó Integral · NCM 0402.21</option><option value="manga">Manga · NCM 0804.50</option><option value="mangostao">Mangostão · NCM 0804.50</option><option value="mel-organico">Mel Orgânico · NCM 0409.00</option><option value="mel-silvestre">Mel Silvestre · NCM 0409.00</option><option value="melao-amarelo">Melão Amarelo · NCM 0807.19</option><option value="milho-amarelo">Milho Amarelo · NCM 1005.90</option><option value="polpa-de-acai-congelada">Polpa de Açaí Congelada · NCM 0811.90</option><option value="soja-em-grao">Soja em Grão · NCM 1201.90</option><option value="suco-de-laranja-concentrado-fcoj">Suco de Laranja Concentrado (FCOJ) · NCM 2009.11</option><option value="oleo-de-soja-bruto">Óleo de Soja Bruto · NCM 1507.10</option>
+          </select></label>
+        <label class="field"><span data-country-label>País de origem</span>
+          <select name="country" required>
+            
+          </select></label>
+        <label class="field"><span>Empresa</span><input type="text" name="company" placeholder="Opcional"></label>
+        <label class="field full"><span>E-mail para receber o relatório</span><input type="email" name="email" required placeholder="voce@empresa.com.br"></label>
+      </div>
+      <button class="btn" type="submit">Gerar relatório</button>
+      <span class="err-msg" data-err></span>
+    </form>
+    <div id="feasibility-report" hidden></div>
+  </div>
+</dialog>
+
+<!-- Modal: fale com o time -->
+<dialog id="dlg-contact" aria-labelledby="contact-title">
+  <button class="modal-close" type="button" data-close aria-label="Fechar">×</button>
+  <div class="modal-body">
+    <div class="eyebrow">Fale com o time</div>
+    <h2 id="contact-title">Conte o que você negocia</h2>
+    <form id="contact-form" novalidate>
+      <div class="form-grid">
+        <label class="field"><span>Nome</span><input type="text" name="name" required></label>
+        <label class="field"><span>Empresa</span><input type="text" name="company"></label>
+        <label class="field full"><span>E-mail</span><input type="email" name="email" required></label>
+        <label class="field full"><span>Mensagem</span><textarea name="message" rows="3"></textarea></label>
+      </div>
+      <button class="btn" type="submit">Enviar</button>
+      <span class="err-msg" data-err></span>
+    </form>
+  </div>
+</dialog>
+
+<script src="/static/js/app.js?v=2" defer></script>
+
+</body>
+</html>
